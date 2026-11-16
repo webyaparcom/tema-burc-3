@@ -1,0 +1,120 @@
+<section class="modulex-cagri-yildiz-burc{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-cagri-yildiz-burc-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* cagri-yildiz-burc — cagri-paket-sorusu yanıtları alt alta satır yapar; bu modülde seçenekler trigonometrik daire yerleşimiyle bir çark oluşturur (CSS --i/--n + konteyner birimi) ve merkez + alt panel güncellenir — ailede dairesel seçici yok. */
+  .modulex-cagri-yildiz-burc { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-yildiz-burc *, .modulex-cagri-yildiz-burc *::before, .modulex-cagri-yildiz-burc *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-cagri-yildiz-burc :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-cagri-yildiz-burc :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-cagri-yildiz-burc :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-cagri-yildiz-burc :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-cagri-yildiz-burc img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-cagri-yildiz-burc) img { height: auto; }
+  .modulex-cagri-yildiz-burc [hidden] { display: none !important; }
+  .modulex-cagri-yildiz-burc :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-cagri-yildiz-burc :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-cagri-yildiz-burc-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-cagri-yildiz-burc-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-cagri-yildiz-burc--bassiz .modulex-cagri-yildiz-burc-bas { display: none; }
+  .modulex-cagri-yildiz-burc-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-cagri-yildiz-burc-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-cagri-yildiz-burc-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-cagri-yildiz-burc-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-cagri-yildiz-burc-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-cagri-yildiz-burc-dugme:hover { transform: translateY(-2px); }
+  .modulex-cagri-yildiz-burc-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
+  .modulex-cagri-yildiz-burc-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-cagri-yildiz-burc-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-cagri-yildiz-burc-duzen { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .modulex-cagri-yildiz-burc-duzen--tek { grid-template-columns: minmax(0, 1fr); max-width: 760px; }
+  .modulex-cagri-yildiz-burc-yazi { display: grid; gap: 14px; justify-items: start; }
+  .modulex-cagri-yildiz-burc-cark-kap { display: grid; justify-items: center; gap: 18px; }
+  .modulex-cagri-yildiz-burc-cark { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 10px; width: 100%; }
+  .modulex-cagri-yildiz-burc-burc { display: grid; gap: 4px; padding: 14px; border: 1.5px solid --cizgi--; border-radius: 14px; background: --kartBg--; color: --yaziRenk--; font: inherit; text-align: start; transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease, scale 0.25s ease; }
+  .modulex-cagri-yildiz-burc-burc:hover { border-color: --accent--; }
+  .modulex-cagri-yildiz-burc-bsim { color: --accentInk--; font-family: "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "DejaVu Sans", sans-serif; font-size: 1.4rem; line-height: 1; font-variant-emoji: text; }
+  .modulex-cagri-yildiz-burc-bad { font-weight: 750; }
+  .modulex-cagri-yildiz-burc-byorum { color: --muted--; font-size: 0.88rem; }
+  .modulex-cagri-yildiz-burc-merkez { display: none; }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-cark { position: relative; display: block; width: min(100%, 440px); aspect-ratio: 1; border: 1px solid --cizgi--; border-radius: 50%; container-type: inline-size; }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-cark::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, --yaziRenk-- 40%, transparent) 0 1px, transparent 1.5px) 0 0 / 26px 26px, repeating-conic-gradient(from 0deg, color-mix(in srgb, --accent-- 22%, transparent) 0 0.5deg, transparent 0.7deg 30deg); -webkit-mask-image: radial-gradient(circle, transparent 0 27%, black 28%); mask-image: radial-gradient(circle, transparent 0 27%, black 28%); animation: modulex-cagri-yildiz-burc-don 120s linear infinite; }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-burc { position: absolute; left: 50%; top: 50%; place-items: center; width: clamp(44px, 12cqw, 56px); aspect-ratio: 1; padding: 0; border-radius: 50%; background: --bg--; text-align: center; transform: translate(-50%, -50%) rotate(calc(var(--i) * 360deg / var(--n))) translateY(-40cqw) rotate(calc(var(--i) * -360deg / var(--n))); }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-burc:hover { scale: 1.12; }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-burc[aria-pressed="true"] { border-color: --accent--; background: --accent--; color: --accentText--; scale: 1.15; }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-burc[aria-pressed="true"] .modulex-cagri-yildiz-burc-bsim { color: inherit; }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-bad, .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-byorum { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .modulex-cagri-yildiz-burc--bcjs .modulex-cagri-yildiz-burc-merkez { position: absolute; inset: 27%; display: grid; place-content: center; justify-items: center; gap: 6px; padding: 10px; border-radius: 50%; background: --bg--; box-shadow: 0 0 0 1px --cizgi--, 0 0 40px -10px color-mix(in srgb, --accent-- 60%, transparent); text-align: center; }
+  .modulex-cagri-yildiz-burc-mikon2 { color: --accentInk--; font-size: 30px; }
+  .modulex-cagri-yildiz-burc-mad { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.05rem, 4cqw, 1.5rem); font-weight: 800; line-height: 1.2; }
+  .modulex-cagri-yildiz-burc-yorum { max-width: 440px; padding: 14px 18px; border-radius: 14px; background: --kartBg--; border: 1px solid --cizgi--; text-align: center; animation: modulex-cagri-yildiz-burc-gel 0.4s ease both; }
+  @keyframes modulex-cagri-yildiz-burc-don { to { transform: rotate(360deg); } }
+  @keyframes modulex-cagri-yildiz-burc-gel { from { transform: translateY(6px); } to { transform: none; } }
+  @media (max-width: 768px) {
+    .modulex-cagri-yildiz-burc-duzen { grid-template-columns: minmax(0, 1fr); }
+  }
+  .modulex-cagri-yildiz-burc-wasvg { width: 1.25em; height: 1.25em; flex: none; }
+  .modulex-cagri-yildiz-burc-maddeler { display: grid; gap: 12px; }
+  .modulex-cagri-yildiz-burc-madde { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-cagri-yildiz-burc-mikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-cagri-yildiz-burc-myazi { display: grid; gap: 2px; }
+  .modulex-cagri-yildiz-burc-myazi strong { font-weight: 700; }
+  .modulex-cagri-yildiz-burc-myazi small { color: --muted--; font-size: 0.92rem; }
+  .modulex-cagri-yildiz-burc-not { color: --muted--; font-size: 0.9rem; }
+  .modulex-cagri-yildiz-burc-saat { display: flex; align-items: center; gap: 8px; color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-yildiz-burc-saat .material-symbols-outlined { font-size: 20px; color: --accentInk--; }
+  .modulex-cagri-yildiz-burc-metin { max-width: 62ch; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-yildiz-burc :is(.modulex-cagri-yildiz-burc-baslik, .modulex-cagri-yildiz-burc-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-yildiz-burc-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-cagri-yildiz-burc { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-cagri-yildiz-burc *, .modulex-cagri-yildiz-burc *::before, .modulex-cagri-yildiz-burc *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-cagri-yildiz-burc";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const burcCark = (s, P) => {
+        const b = [...s.querySelectorAll("[data-bc]")];
+        if (!b.length) return;
+        s.classList.add(P + "--bcjs");
+        const ad = s.querySelector("[data-bc-ad]");
+        const mt = s.querySelector("[data-bc-metin]");
+        const ilkAd = ad ? ad.textContent : "";
+        const baglar = [...s.querySelectorAll("[data-bc-bag]")];
+        baglar.forEach((a) => { a.dataset.bcTaban = a.getAttribute("href") || ""; });
+        const sec = (x) => {
+          b.forEach((y) => y.setAttribute("aria-pressed", String(y === x)));
+          if (ad) ad.textContent = x ? x.dataset.bc : ilkAd;
+          const y = x ? x.querySelector("small") : null;
+          if (mt) { mt.textContent = y ? y.textContent : ""; mt.hidden = !mt.textContent; }
+          baglar.forEach((a) => {
+            const t = a.dataset.bcTaban;
+            if (!t) return;
+            let u;
+            try { u = new URL(t, location.href); } catch (e) { return; }
+            u.searchParams.set("burc", x.dataset.bc);
+            a.setAttribute("href", u.href.replace(/\?[^#]*/, (q) => q.replace(/\+/g, "%20")));
+          });
+        };
+        b.forEach((x) => x.addEventListener("click", () => sec(x)));
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      burcCark(s, P, az);
+    });
+  })();
+</script>

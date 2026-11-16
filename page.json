@@ -1,0 +1,63 @@
+{
+  "name": "Sayfalar",
+  "path": "page",
+  "desc": [],
+  "data": [
+    {
+      "name": {
+        "tr": "Kurallar",
+        "en": "Rules",
+        "ar": "القواعد"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 0,
+      "icon": "menu_book",
+      "desing": {
+        "header": [],
+        "body": [
+          "xdtjl7",
+          "xd43ku"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Defterin altı kuralı ve yılın dört kapısı.",
+        "en": "The notebook’s six rules and the four gates of the year.",
+        "ar": "قواعد الدفتر الست وأبواب السنة الأربعة."
+      }
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "juf3ww",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Haftalık not ve okur soruları için yazın.",
+        "en": "Write for the weekly note and reader questions.",
+        "ar": "اكتب لطلب الملاحظة الأسبوعية وأسئلة القراء."
+      }
+    }
+  ]
+}
