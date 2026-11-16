@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Kurallar",
+    "en": "Rules",
+    "ar": "القواعد"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 0,
+  "icon": "menu_book",
+  "desing": {
+    "header": [],
+    "body": [
+      "xdtjl7",
+      "xd43ku"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Defterin altı kuralı ve yılın dört kapısı.",
+    "en": "The notebook’s six rules and the four gates of the year.",
+    "ar": "قواعد الدفتر الست وأبواب السنة الأربعة."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Kurallar",
+    "en": "Rules",
+    "ar": "القواعد"
+  },
+  "keyword": {
+    "tr": "burç yorumu kuralları, ekinoks",
+    "en": "zodiac note rules, equinox",
+    "ar": "قواعد ملاحظات الأبراج، الاعتدال"
+  },
+  "text": {},
+  "update": "2026-11-16T22:43:17.395Z",
+  "date": "2026-10-30"
+}

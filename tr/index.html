@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>Gök Defteri</title>
+  <meta name="description" content="Gök Defteri: on iki burç için kısa notlar, yılın dört kapısı ve günün eğlenceli notu. Eğlence ve yorum amaçlıdır; kesin öngörü değildir. Demo site." />
+  <meta name="keywords" content="burç notları, burç özellikleri, ekinoks, gündönümü, günün burç notu" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://burc-3.webyapar.com/tr/" />
+  <link rel="alternate" hreflang="tr" href="https://burc-3.webyapar.com/tr/" />
+  <link rel="alternate" hreflang="en" href="https://burc-3.webyapar.com/en/" />
+  <link rel="alternate" hreflang="ar" href="https://burc-3.webyapar.com/ar/" />
+  <link rel="alternate" hreflang="x-default" href="https://burc-3.webyapar.com/tr/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gök Defteri" />
+  <meta property="og:description" content="Gök Defteri: on iki burç için kısa notlar, yılın dört kapısı ve günün eğlenceli notu. Eğlence ve yorum amaçlıdır; kesin öngörü değildir. Demo site." />
+  <meta property="og:url" content="https://burc-3.webyapar.com/tr/" />
+  <meta property="og:image" content="https://burc-3.webyapar.com/img/logo.png" />
+  <meta property="og:image:alt" content="Gök Defteri" />
+  <meta property="og:site_name" content="Gök Defteri" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_SA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gök Defteri" />
+  <meta name="twitter:description" content="Gök Defteri: on iki burç için kısa notlar, yılın dört kapısı ve günün eğlenceli notu. Eğlence ve yorum amaçlıdır; kesin öngörü değildir. Demo site." />
+  <meta name="twitter:image" content="https://burc-3.webyapar.com/img/logo.png" />
+
+  <meta name="theme-color" content="#B5532E" />
+  <meta name="mx-api-base" content="none" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/rubik.css?v=d8bf8876" />
+  <link rel="stylesheet" href="/src/fonts/dm-serif-display.css?v=741b1ef9" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=f0305d2e" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=af58488b" />
+  <link rel="stylesheet" href="/src/css.css?v=a258ef88" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=33d83fcb" />
+  
+  <link rel="stylesheet" href="/src/mx-ui.css?v=1e0459e3" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=627a4927" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=86fd23c5" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=ca16ef6e" />
+  <link rel="shortcut icon" href="/img/icon.png?v=f70f22fc" type="image/png" />
+  <link rel="apple-touch-icon" href="/img/icon.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://burc-3.webyapar.com/#website",
+      "url": "https://burc-3.webyapar.com/",
+      "name": "Gök Defteri",
+      "description": "Gök Defteri: on iki burç için kısa notlar, yılın dört kapısı ve günün eğlenceli notu. Eğlence ve yorum amaçlıdır; kesin öngörü değildir. Demo site.",
+      "inLanguage": "tr",
+      "publisher": {
+        "@id": "https://burc-3.webyapar.com/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://burc-3.webyapar.com/#organization",
+      "name": "Gök Defteri",
+      "url": "https://burc-3.webyapar.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://burc-3.webyapar.com/img/logo.png"
+      },
+      "image": "https://burc-3.webyapar.com/img/logo.png",
+      "description": "Gök Defteri: on iki burç için kısa notlar, yılın dört kapısı ve günün eğlenceli notu. Eğlence ve yorum amaçlıdır; kesin öngörü değildir. Demo site."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://burc-3.webyapar.com/tr/#webpage",
+      "url": "https://burc-3.webyapar.com/tr/",
+      "name": "Gök Defteri",
+      "description": "Gök Defteri: on iki burç için kısa notlar, yılın dört kapısı ve günün eğlenceli notu. Eğlence ve yorum amaçlıdır; kesin öngörü değildir. Demo site.",
+      "inLanguage": "tr",
+      "isPartOf": {
+        "@id": "https://burc-3.webyapar.com/#website"
+      },
+      "about": {
+        "@id": "https://burc-3.webyapar.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://burc-3.webyapar.com/img/logo.png"
+      }
+    }
+  ]
+}
+</script>
+  
+<link rel="stylesheet" href="style.css?v=6dabd77e">
+</head>
+
+<body>
+  <a class="mx-skip-link" href="#content">İçeriğe atla</a>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
+  <div id="header"><div class="h0000-db" id="db-k8db01" role="region" aria-label="Demo site uyarısı" data-tone="info" style="--db-bg:var(--mx-site-text, #1b1b1b);--db-fg:var(--mx-site-bg, #ffffff)">
+  <span class="material-symbols-outlined h0000-db-icon" aria-hidden="true">info</span>
+  <p class="h0000-db-text">Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz</p>
+  <a class="h0000-db-cta" href="https://webyapar.com/temalar" target="_blank" rel="noopener noreferrer">
+    <span>Bu temayı iste</span><span class="mx-visually-hidden"> (yeni sekmede açılır)</span>
+    <span class="material-symbols-outlined mx-flip h0000-db-arrow" aria-hidden="true">arrow_forward</span>
+  </a>
+  
+</div>
+<script defer src="https://webyapar.com/api/portal/tema-hata.js"></script>
+
+<script>
+  
+  (function () {
+    var kok = document.getElementById("db-k8db01");
+    if (!kok) {
+      return;
+    }
+    var itilenler = [];
+    var gorulen = [];
+
+    function ustaTasi() {
+      var govde = document.body;
+      if (!govde || kok.parentNode === govde) {
+        return;
+      }
+      var ilk = document.getElementById("header");
+      if (ilk && ilk.parentNode === govde) {
+        govde.insertBefore(kok, ilk);
+      } else {
+        govde.insertBefore(kok, govde.firstChild);
+      }
+    }
+
+    function adayMi(el) {
+      if (el === kok || kok.contains(el) || el.nodeType !== 1) {
+        return false;
+      }
+      var cs = window.getComputedStyle(el);
+      if ((cs.position !== "fixed" && cs.position !== "sticky") || cs.display === "none") {
+        return false;
+      }
+      
+      return parseFloat(cs.top) === 0 && el.offsetHeight > 0 && el.offsetHeight <= 200;
+    }
+
+    function it() {
+      var h = kok.offsetHeight;
+      document.documentElement.style.setProperty("--mx-demo-bandi-h", h + "px");
+      var liste = document.querySelectorAll("#header *, body > *");
+      for (var i = 0; i < liste.length; i++) {
+        var el = liste[i];
+        if (gorulen.indexOf(el) !== -1) {
+          continue;
+        }
+        if (adayMi(el)) {
+          gorulen.push(el);
+          itilenler.push(el);
+        }
+      }
+      for (var j = 0; j < itilenler.length; j++) {
+        itilenler[j].style.top = h + "px";
+      }
+    }
+
+    ustaTasi();
+    it();
+    window.addEventListener("load", function () {
+      ustaTasi();
+      it();
+      setTimeout(it, 400);
+      setTimeout(it, 1500);
+    });
+    window.addEventListener("resize", it);
+    if (window.ResizeObserver) {
+      new window.ResizeObserver(it).observe(kok);
+    }
+  })();
+</script>
+<header class="h0001-ust-radyal h0001-ust-radyal--bassiz" >
+  <div class="h0001-ust-radyal-ic">
+    
+    <div class="h0001-ust-radyal-yuva"><a class="h0001-ust-radyal-logo" href="/tr/" aria-label="Anasayfa - Gök Defteri"><img src="/img/logo.png" alt="Gök Defteri" loading="eager" decoding="async" /></a><nav class="h0001-ust-radyal-nav h0001-ust-radyal-nav--yedek" aria-label="Navigasyon"><ul class="h0001-ust-radyal-yedekliste"><li><a class="h0001-ust-radyal-oge" href="/tr/" aria-current="page">Anasayfa</a></li><li><a class="h0001-ust-radyal-oge" href="/tr/hakkimizda/">Kurallar</a></li><li><a class="h0001-ust-radyal-oge" href="/tr/iletisim/">İletişim</a></li></ul></nav><div class="h0001-ust-radyal-yuvauc"><a class="h0001-ust-radyal-cta" href="/tr/iletisim/">Bize yazın<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a><button type="button" class="h0001-ust-radyal-ac h0001-ust-radyal-dugme" aria-expanded="false" aria-controls="h0001-ust-radyal-fqfu41-panel" aria-label="Menüyü Aç/Kapat"><span class="h0001-ust-radyal-ac-ikon" aria-hidden="true"><span></span><span></span><span></span></span></button></div></div><div class="h0001-ust-radyal-perde" hidden></div><div class="h0001-ust-radyal-panel" id="h0001-ust-radyal-fqfu41-panel" role="dialog" aria-modal="true" aria-label="Menü" hidden><nav class="h0001-ust-radyal-cember" aria-label="Navigasyon"><ul class="h0001-ust-radyal-kadran" style="--n: 3"><li style="--i: 0"><a class="h0001-ust-radyal-dilim" href="/tr/" aria-current="page">Anasayfa</a></li><li style="--i: 1"><a class="h0001-ust-radyal-dilim" href="/tr/hakkimizda/">Kurallar</a></li><li style="--i: 2"><a class="h0001-ust-radyal-dilim" href="/tr/iletisim/">İletişim</a></li></ul><div class="h0001-ust-radyal-gobek"><button type="button" class="h0001-ust-radyal-kapat" aria-label="Menüyü Kapat"><span class="material-symbols-outlined" aria-hidden="true">close</span></button></div></nav><div class="h0001-ust-radyal-palt"><a class="h0001-ust-radyal-tel" href="tel:+902220873333"><span class="material-symbols-outlined" aria-hidden="true">call</span><bdi dir="ltr">+90 222 087 33 33</bdi></a><div class="h0001-ust-radyal-dil"><nav class="wm-langbar" aria-label="Dil Seçici"><ul><li class="wm-lang-item wm-lang-active"><a href="/tr/" hreflang="tr" lang="tr" aria-current="true">TR</a></li><li class="wm-lang-item"><a href="/en/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li></ul></nav></div><a class="h0001-ust-radyal-cta" href="/tr/iletisim/">Bize yazın<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></div></div>
+  </div>
+</header>
+
+
+<script>
+  (() => {
+    const P = "h0001-ust-radyal";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const cekmece = (s, P) => {
+          const ac = s.querySelector("." + P + "-ac");
+          const panel = ac ? document.getElementById(ac.getAttribute("aria-controls")) : null;
+          if (!ac || !panel) return;
+          s.classList.add(P + "--js");
+          const perde = s.querySelector("." + P + "-perde");
+          const modal = panel.getAttribute("aria-modal") === "true";
+          const kok = document.documentElement;
+          const kapa = (odak) => {
+            if (panel.hidden) return;
+            panel.hidden = true;
+            if (perde) perde.hidden = true;
+            ac.setAttribute("aria-expanded", "false");
+            s.classList.remove(P + "--acik");
+            if (modal) kok.style.overflow = "";
+            if (odak) ac.focus();
+          };
+          const aci = () => {
+            panel.hidden = false;
+            if (perde) perde.hidden = false;
+            ac.setAttribute("aria-expanded", "true");
+            s.classList.add(P + "--acik");
+            if (modal) kok.style.overflow = "hidden";
+            const ilk = panel.querySelector("a[href], button");
+            if (ilk) ilk.focus();
+          };
+          ac.addEventListener("click", () => (panel.hidden ? aci() : kapa(true)));
+          panel.addEventListener("click", (e) => {
+            if (e.target.closest("." + P + "-kapat")) kapa(true);
+            else if (e.target.closest("a[href]")) kapa(false);
+          });
+          if (perde) perde.addEventListener("click", () => kapa(true));
+          document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) kapa(true); });
+          if (modal) {
+            panel.addEventListener("keydown", (e) => {
+              if (e.key !== "Tab") return;
+              const o = [...panel.querySelectorAll("a[href], button:not([disabled])")].filter((x) => x.offsetParent !== null);
+              if (!o.length) return;
+              if (e.shiftKey && document.activeElement === o[0]) { e.preventDefault(); o[o.length - 1].focus(); }
+              else if (!e.shiftKey && document.activeElement === o[o.length - 1]) { e.preventDefault(); o[0].focus(); }
+            });
+          }
+          const g = Number(ac.dataset.genis);
+          if (g && window.matchMedia) window.matchMedia(`(min-width: ${g}px)`).addEventListener("change", (m) => { if (m.matches) kapa(false); });
+        };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      cekmece(s, P, az);
+    });
+  })();
+</script>
+</div>
+  <div id="content"><h1 style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Gök Defteri</h1><section class="b0000-burc-izgara" aria-labelledby="b0000-burc-izgara-m2f7vx-b">
+  <div class="b0000-burc-izgara-ic">
+    
+    <div class="b0000-burc-izgara-giris"><p class="b0000-burc-izgara-ust">Burç notları · eğlence amaçlı</p><h2 class="b0000-burc-izgara-baslik" id="b0000-burc-izgara-m2f7vx-b">Gök Defteri: on iki burç, on iki kısa not</h2><p class="b0000-burc-izgara-metin">Burcunuza dokunun; tarih aralığı, öğesi ve defterdeki kısa notu ortadaki sayfada açılsın. Notlar eğlence ve yorum içindir; kesin öngörü değildir.</p></div><div class="b0000-burc-izgara-burcler b0000-burc-izgara-burcler--halka"><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♈︎</span><h3 class="b0000-burc-izgara-bad">Koç</h3><p class="b0000-burc-izgara-btarih">21 Mart – 19 Nisan</p><p class="b0000-burc-izgara-boge">Ateş</p><p class="b0000-burc-izgara-bmetin">Defterde ilk sayfayı açan; işe başlamayı sever.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Koç" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♉︎</span><h3 class="b0000-burc-izgara-bad">Boğa</h3><p class="b0000-burc-izgara-btarih">20 Nisan – 20 Mayıs</p><p class="b0000-burc-izgara-boge">Toprak</p><p class="b0000-burc-izgara-bmetin">Sabırlı ve keyif düşkünü; güzel bir öğleden sonrayı bilir.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Boğa" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♊︎</span><h3 class="b0000-burc-izgara-bad">İkizler</h3><p class="b0000-burc-izgara-btarih">21 Mayıs – 20 Haziran</p><p class="b0000-burc-izgara-boge">Hava</p><p class="b0000-burc-izgara-bmetin">Meraklı ve konuşkan; aynı anda iki kitap okur.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="İkizler" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♋︎</span><h3 class="b0000-burc-izgara-bad">Yengeç</h3><p class="b0000-burc-izgara-btarih">21 Haziran – 22 Temmuz</p><p class="b0000-burc-izgara-boge">Su</p><p class="b0000-burc-izgara-bmetin">Evcil ve koruyucu; fotoğraf albümlerini saklar.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Yengeç" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♌︎</span><h3 class="b0000-burc-izgara-bad">Aslan</h3><p class="b0000-burc-izgara-btarih">23 Temmuz – 22 Ağustos</p><p class="b0000-burc-izgara-boge">Ateş</p><p class="b0000-burc-izgara-bmetin">Sahneyi sever; sofrada hikâyeyi o anlatır.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Aslan" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♍︎</span><h3 class="b0000-burc-izgara-bad">Başak</h3><p class="b0000-burc-izgara-btarih">23 Ağustos – 22 Eylül</p><p class="b0000-burc-izgara-boge">Toprak</p><p class="b0000-burc-izgara-bmetin">Düzenli ve dikkatli; ayrıntıyı ilk o görür.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Başak" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♎︎</span><h3 class="b0000-burc-izgara-bad">Terazi</h3><p class="b0000-burc-izgara-btarih">23 Eylül – 22 Ekim</p><p class="b0000-burc-izgara-boge">Hava</p><p class="b0000-burc-izgara-bmetin">Dengeyi arar; iki tarafı da dinler.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Terazi" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♏︎</span><h3 class="b0000-burc-izgara-bad">Akrep</h3><p class="b0000-burc-izgara-btarih">23 Ekim – 21 Kasım</p><p class="b0000-burc-izgara-boge">Su</p><p class="b0000-burc-izgara-bmetin">Derin ve sır saklayan; polisiye romanları sever.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Akrep" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♐︎</span><h3 class="b0000-burc-izgara-bad">Yay</h3><p class="b0000-burc-izgara-btarih">22 Kasım – 21 Aralık</p><p class="b0000-burc-izgara-boge">Ateş</p><p class="b0000-burc-izgara-bmetin">Gezgin ve iyimser; haritada yeni bir yer arar.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Yay" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♑︎</span><h3 class="b0000-burc-izgara-bad">Oğlak</h3><p class="b0000-burc-izgara-btarih">22 Aralık – 19 Ocak</p><p class="b0000-burc-izgara-boge">Toprak</p><p class="b0000-burc-izgara-bmetin">Kararlı ve planlı; takvimi kurşun kalemle doldurur.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Oğlak" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♒︎</span><h3 class="b0000-burc-izgara-bad">Kova</h3><p class="b0000-burc-izgara-btarih">20 Ocak – 18 Şubat</p><p class="b0000-burc-izgara-boge">Hava</p><p class="b0000-burc-izgara-bmetin">Özgün ve yenilikçi; garip fikirlerin dostu.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Kova" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♓︎</span><h3 class="b0000-burc-izgara-bad">Balık</h3><p class="b0000-burc-izgara-btarih">19 Şubat – 20 Mart</p><p class="b0000-burc-izgara-boge">Su</p><p class="b0000-burc-izgara-bmetin">Hayalperest ve şefkatli; müzikle düşünür.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Balık" hidden></button></article><div class="b0000-burc-izgara-panel" id="b0000-burc-izgara-m2f7vx-pn" data-bpanel aria-live="polite" hidden></div></div><div class="b0000-burc-izgara-alt"><div class="b0000-burc-izgara-cta"><a class="b0000-burc-izgara-dugme" href="/tr/iletisim/">Haftalık notu iste<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></div></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0000-burc-izgara";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const burcSec = (s, P) => {
+        const bt = [...s.querySelectorAll("[data-bsec]")];
+        const pn = s.querySelector("[data-bpanel]");
+        if (!bt.length || !pn) return;
+        s.classList.add(P + "--js");
+        const sec = (i) => {
+          const kay = bt[i].closest("[data-burc]");
+          bt.forEach((b, j) => b.setAttribute("aria-pressed", String(j === i)));
+          s.querySelectorAll("[data-burc]").forEach((z) => z.classList.toggle(P + "--secili", z === kay));
+          const bic = kay && kay.querySelector("[data-bic]");
+          pn.replaceChildren(...(bic ? [...bic.children].map((c) => c.cloneNode(true)) : []));
+          pn.hidden = false;
+          pn.classList.remove(P + "--tazele");
+          void pn.offsetWidth;
+          pn.classList.add(P + "--tazele");
+        };
+        bt.forEach((b, i) => { b.hidden = false; b.addEventListener("click", () => sec(i)); });
+        sec(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      burcSec(s, P, az);
+    });
+  })();
+</script>
+<section class="b0001-deger-burc-cark" aria-labelledby="b0001-deger-burc-cark-xdtjl7-b">
+  <div class="b0001-deger-burc-cark-ic">
+    <header class="b0001-deger-burc-cark-bas"><p class="b0001-deger-burc-cark-ust">Defterin kuralları</p><h2 class="b0001-deger-burc-cark-baslik" id="b0001-deger-burc-cark-xdtjl7-b">Altı kural, tek çark</h2><p class="b0001-deger-burc-cark-metin">Çarkı çevirin ya da bir dilime dokunun; ibrenin altındaki kural yanda açılır.</p></header>
+    <div class="b0001-deger-burc-cark-duzen"><div class="b0001-deger-burc-cark-sahne"><div class="b0001-deger-burc-cark-cark" data-cark style="--n: 6"><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 0" data-cark-git="0" aria-pressed="true"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">sentiment_satisfied</span><span class="b0001-deger-burc-cark-dad">Eğlence dili</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 1" data-cark-git="1" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">block</span><span class="b0001-deger-burc-cark-dad">Kesin kehanet yok</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 2" data-cark-git="2" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">short_text</span><span class="b0001-deger-burc-cark-dad">Kısa ve açık</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 3" data-cark-git="3" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">health_and_safety</span><span class="b0001-deger-burc-cark-dad">Tavsiye değil</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 4" data-cark-git="4" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">public</span><span class="b0001-deger-burc-cark-dad">Gerçek gökyüzü</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 5" data-cark-git="5" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">lock</span><span class="b0001-deger-burc-cark-dad">Mesajınız sizde</span></span></button><span class="b0001-deger-burc-cark-gobek" aria-hidden="true"></span></div><span class="b0001-deger-burc-cark-ibre" aria-hidden="true"></span></div><div class="b0001-deger-burc-cark-yan"><ol class="b0001-deger-burc-cark-panel" aria-live="polite"><li class="b0001-deger-burc-cark-oge" data-cark-panel="0"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">01 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">sentiment_satisfied</span><p class="b0001-deger-burc-cark-etiket">01</p><h3 class="b0001-deger-burc-cark-kbaslik">Eğlence dili</h3><p class="b0001-deger-burc-cark-kmetin">Notlar gülümsetmek için yazılır; kimseyi korkutmaz.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="1"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">02 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">block</span><p class="b0001-deger-burc-cark-etiket">02</p><h3 class="b0001-deger-burc-cark-kbaslik">Kesin kehanet yok</h3><p class="b0001-deger-burc-cark-kmetin">«Olacak» yerine «olabilir» yazarız; gelecek kimsenin defterinde yazılı değildir.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="2"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">03 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">short_text</span><p class="b0001-deger-burc-cark-etiket">03</p><h3 class="b0001-deger-burc-cark-kbaslik">Kısa ve açık</h3><p class="b0001-deger-burc-cark-kmetin">Her burca tek cümle; uzun ve karışık yorum yazmayız.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="3"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">04 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">health_and_safety</span><p class="b0001-deger-burc-cark-etiket">04</p><h3 class="b0001-deger-burc-cark-kbaslik">Tavsiye değil</h3><p class="b0001-deger-burc-cark-kmetin">Sağlık, hukuk ve para konusunda uzmana danışın; defter yalnız yorumdur.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="4"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">05 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">public</span><p class="b0001-deger-burc-cark-etiket">05</p><h3 class="b0001-deger-burc-cark-kbaslik">Gerçek gökyüzü</h3><p class="b0001-deger-burc-cark-kmetin">Ekinoks ve gündönümü gibi tarihleri gökbilim kaynaklarından alırız.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="5"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">06 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">lock</span><p class="b0001-deger-burc-cark-etiket">06</p><h3 class="b0001-deger-burc-cark-kbaslik">Mesajınız sizde</h3><p class="b0001-deger-burc-cark-kmetin">Okur mesajları yalnız yanıt için kullanılır, yayımlanmaz.</p></li></ol><div class="b0001-deger-burc-cark-kontrol"><button type="button" class="b0001-deger-burc-cark-yon" data-cark-yon="geri" aria-label="Önceki"><span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_back</span></button><button type="button" class="b0001-deger-burc-cark-yon" data-cark-yon="ileri" aria-label="Sonraki"><span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></button></div></div></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0001-deger-burc-cark";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const cark = (s, P) => {
+        const c = s.querySelector("[data-cark]");
+        const d = [...s.querySelectorAll("[data-cark-git]")];
+        const p = [...s.querySelectorAll("[data-cark-panel]")];
+        if (!c || d.length < 2) return;
+        s.classList.add(P + "--js");
+        const n = d.length;
+        let i = 0;
+        let tur = 0;
+        const git = (j) => {
+          j = ((j % n) + n) % n;
+          let f = j - i;
+          if (f > n / 2) f -= n;
+          if (f < -n / 2) f += n;
+          tur += f;
+          i = j;
+          c.style.setProperty("--aci", String((tur * 360) / n));
+          d.forEach((b, x) => b.setAttribute("aria-pressed", String(x === i)));
+          p.forEach((x, y) => { x.hidden = y !== i; });
+        };
+        d.forEach((b) => b.addEventListener("click", () => git(Number(b.dataset.carkGit) || 0)));
+        s.querySelectorAll("[data-cark-yon]").forEach((b) => b.addEventListener("click", () => git(i + (b.dataset.carkYon === "ileri" ? 1 : -1))));
+        git(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      cark(s, P, az);
+    });
+  })();
+</script>
+<section class="b0002-zaman-kadran" aria-labelledby="b0002-zaman-kadran-xd43ku-b">
+  <div class="b0002-zaman-kadran-ic">
+    <header class="b0002-zaman-kadran-bas"><p class="b0002-zaman-kadran-ust">Yılın dört kapısı</p><h2 class="b0002-zaman-kadran-baslik" id="b0002-zaman-kadran-xd43ku-b">Güneşin yıl boyu yolculuğu</h2><p class="b0002-zaman-kadran-metin">Kadranda bir tarihe dokunun ya da ok tuşlarıyla gezin. Tarihler yıllara göre bir gün oynayabilir; burç başlangıçları bu kapılara denk gelir.</p></header>
+    <div class="b0002-zaman-kadran-saat" data-kadran style="--n: 4"><div class="b0002-zaman-kadran-kadran"><span class="b0002-zaman-kadran-ibre" aria-hidden="true"></span><ol class="b0002-zaman-kadran-dilimler"><li class="b0002-zaman-kadran-konum" style="--i: 0"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k0" data-kd="0" aria-current="true"><bdi dir="ltr">20 Mart</bdi></a></li><li class="b0002-zaman-kadran-konum" style="--i: 1"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k1" data-kd="1"><bdi dir="ltr">21 Haziran</bdi></a></li><li class="b0002-zaman-kadran-konum" style="--i: 2"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k2" data-kd="2"><bdi dir="ltr">23 Eylül</bdi></a></li><li class="b0002-zaman-kadran-konum" style="--i: 3"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k3" data-kd="3"><bdi dir="ltr">21 Aralık</bdi></a></li></ol><div class="b0002-zaman-kadran-merkez" aria-hidden="true"><span class="b0002-zaman-kadran-mikon material-symbols-outlined" data-kd-ikon>local_florist</span><bdi class="b0002-zaman-kadran-myil" dir="ltr" data-kd-yil>20 Mart</bdi></div></div><ol class="b0002-zaman-kadran-paneller"><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k0" data-etiket="20 Mart" data-ikon="local_florist"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">local_florist</span><bdi dir="ltr">20 Mart</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">İlkbahar ekinoksu</h3><p class="b0002-zaman-kadran-kmetin">Gece ile gündüz neredeyse eşit; Koç dönemi başlar.</p></div></li><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k1" data-etiket="21 Haziran" data-ikon="wb_sunny"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">wb_sunny</span><bdi dir="ltr">21 Haziran</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">Yaz gündönümü</h3><p class="b0002-zaman-kadran-kmetin">Kuzey yarımkürede yılın en uzun günü; Yengeç dönemi başlar.</p></div></li><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k2" data-etiket="23 Eylül" data-ikon="eco"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">eco</span><bdi dir="ltr">23 Eylül</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">Sonbahar ekinoksu</h3><p class="b0002-zaman-kadran-kmetin">Gün ve gece yeniden dengede; Terazi dönemi başlar.</p></div></li><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k3" data-etiket="21 Aralık" data-ikon="ac_unit"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">ac_unit</span><bdi dir="ltr">21 Aralık</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">Kış gündönümü</h3><p class="b0002-zaman-kadran-kmetin">Yılın en uzun gecesi; Oğlak dönemi başlar. Defterde yeni yılın ilk sayfası açılır.</p></div></li></ol></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0002-zaman-kadran";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const kadranSec = (s, P) => {
+        const kok = s.querySelector("[data-kadran]");
+        if (!kok) return;
+        const D = [...kok.querySelectorAll("[data-kd]")];
+        const Pn = [...kok.querySelectorAll("." + P + "-panel")];
+        if (D.length < 2 || D.length !== Pn.length) return;
+        s.classList.add(P + "--js");
+        const myil = kok.querySelector("[data-kd-yil]");
+        const mik = kok.querySelector("[data-kd-ikon]");
+        let i = 0;
+        const sec = (n, odak) => {
+          i = (n + D.length) % D.length;
+          Pn.forEach((p, j) => { p.hidden = j !== i; });
+          D.forEach((d, j) => { if (j === i) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current"); });
+          kok.style.setProperty("--s", String(i));
+          if (myil) myil.textContent = Pn[i].dataset.etiket || "";
+          if (mik) { mik.textContent = Pn[i].dataset.ikon || ""; mik.hidden = !Pn[i].dataset.ikon; }
+          if (odak) D[i].focus();
+        };
+        D.forEach((d, j) => {
+          d.addEventListener("click", (e) => { e.preventDefault(); sec(j); });
+          d.addEventListener("keydown", (e) => {
+            const rtl = getComputedStyle(kok).direction === "rtl";
+            const ileri = e.key === "ArrowDown" || e.key === (rtl ? "ArrowLeft" : "ArrowRight");
+            const geri = e.key === "ArrowUp" || e.key === (rtl ? "ArrowRight" : "ArrowLeft");
+            if (!ileri && !geri) return;
+            e.preventDefault();
+            sec(i + (ileri ? 1 : -1), true);
+          });
+        });
+        sec(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      kadranSec(s, P, az);
+    });
+  })();
+</script>
+<section class="b0003-cagri-yildiz-burc" aria-labelledby="b0003-cagri-yildiz-burc-z2qumb-b">
+  <div class="b0003-cagri-yildiz-burc-ic">
+    
+    <div class="b0003-cagri-yildiz-burc-duzen"><div class="b0003-cagri-yildiz-burc-yazi"><p class="b0003-cagri-yildiz-burc-ust">Günün notu</p><h2 class="b0003-cagri-yildiz-burc-baslik" id="b0003-cagri-yildiz-burc-z2qumb-b">Çarktan burcunuzu seçin, günün notunu okuyun</h2><p class="b0003-cagri-yildiz-burc-metin">Her not küçük, keyifli bir öneridir. Notlar eğlence ve yorum içindir; kesin öngörü değildir.</p><div class="b0003-cagri-yildiz-burc-cta"><a class="b0003-cagri-yildiz-burc-dugme" href="/tr/iletisim/" data-bc-bag>Haftalık notu iste<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a><a class="b0003-cagri-yildiz-burc-dugme b0003-cagri-yildiz-burc-dugme--ikincil" href="/tr/hakkimizda/">Kurallarımız</a></div><p class="b0003-cagri-yildiz-burc-not">Notlar eğlence ve yorum içindir; kesin öngörü değildir.</p></div><div class="b0003-cagri-yildiz-burc-cark-kap"><div class="b0003-cagri-yildiz-burc-cark" role="group" aria-label="Burçlar"><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 0; --n: 12" data-bc="Koç" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♈︎</span><span class="b0003-cagri-yildiz-burc-bad">Koç</span><small class="b0003-cagri-yildiz-burc-byorum">Yarım kalan bir listeye bugün bir madde eklemek iyi gelebilir.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 1; --n: 12" data-bc="Boğa" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♉︎</span><span class="b0003-cagri-yildiz-burc-bad">Boğa</span><small class="b0003-cagri-yildiz-burc-byorum">Belki bugün sevdiğiniz bir yemeği yavaşça pişirmenin günü.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 2; --n: 12" data-bc="İkizler" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♊︎</span><span class="b0003-cagri-yildiz-burc-bad">İkizler</span><small class="b0003-cagri-yildiz-burc-byorum">Uzun zamandır yazmadığınız birine kısa bir mesaj atabilirsiniz.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 3; --n: 12" data-bc="Yengeç" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♋︎</span><span class="b0003-cagri-yildiz-burc-bad">Yengeç</span><small class="b0003-cagri-yildiz-burc-byorum">Eski bir fotoğrafa bakıp bir anıyı deftere yazmak hoş olabilir.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 4; --n: 12" data-bc="Aslan" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♌︎</span><span class="b0003-cagri-yildiz-burc-bad">Aslan</span><small class="b0003-cagri-yildiz-burc-byorum">Bugün birine içten bir iltifat etmek ikinizi de güldürebilir.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 5; --n: 12" data-bc="Başak" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♍︎</span><span class="b0003-cagri-yildiz-burc-bad">Başak</span><small class="b0003-cagri-yildiz-burc-byorum">Bir çekmeceyi toparlamak, belki günün en keyifli işi olur.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 6; --n: 12" data-bc="Terazi" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♎︎</span><span class="b0003-cagri-yildiz-burc-bad">Terazi</span><small class="b0003-cagri-yildiz-burc-byorum">İki seçenek arasında kaldıysanız bir yürüyüş molası verebilirsiniz.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 7; --n: 12" data-bc="Akrep" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♏︎</span><span class="b0003-cagri-yildiz-burc-bad">Akrep</span><small class="b0003-cagri-yildiz-burc-byorum">Yarım bıraktığınız bir kitabın son bölümü sizi bekliyor olabilir.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 8; --n: 12" data-bc="Yay" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♐︎</span><span class="b0003-cagri-yildiz-burc-bad">Yay</span><small class="b0003-cagri-yildiz-burc-byorum">Hiç gitmediğiniz bir sokaktan eve dönmek küçük bir macera olabilir.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 9; --n: 12" data-bc="Oğlak" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♑︎</span><span class="b0003-cagri-yildiz-burc-bad">Oğlak</span><small class="b0003-cagri-yildiz-burc-byorum">Haftanın planına bir dinlenme saati yazmayı deneyebilirsiniz.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 10; --n: 12" data-bc="Kova" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♒︎</span><span class="b0003-cagri-yildiz-burc-bad">Kova</span><small class="b0003-cagri-yildiz-burc-byorum">Aklınıza gelen tuhaf bir fikri kenara not etmek eğlenceli olabilir.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 11; --n: 12" data-bc="Balık" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♓︎</span><span class="b0003-cagri-yildiz-burc-bad">Balık</span><small class="b0003-cagri-yildiz-burc-byorum">Sevdiğiniz bir şarkıyı baştan sona dinlemek için beş dakika ayırabilirsiniz.</small></button><div class="b0003-cagri-yildiz-burc-merkez"><span class="b0003-cagri-yildiz-burc-mikon2 material-symbols-outlined" aria-hidden="true">auto_awesome</span><p class="b0003-cagri-yildiz-burc-mad" data-bc-ad aria-live="polite">Burcunuzu seçin</p></div></div><p class="b0003-cagri-yildiz-burc-yorum" data-bc-metin aria-live="polite" hidden></p></div></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0003-cagri-yildiz-burc";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const burcCark = (s, P) => {
+        const b = [...s.querySelectorAll("[data-bc]")];
+        if (!b.length) return;
+        s.classList.add(P + "--bcjs");
+        const ad = s.querySelector("[data-bc-ad]");
+        const mt = s.querySelector("[data-bc-metin]");
+        const ilkAd = ad ? ad.textContent : "";
+        const baglar = [...s.querySelectorAll("[data-bc-bag]")];
+        baglar.forEach((a) => { a.dataset.bcTaban = a.getAttribute("href") || ""; });
+        const sec = (x) => {
+          b.forEach((y) => y.setAttribute("aria-pressed", String(y === x)));
+          if (ad) ad.textContent = x ? x.dataset.bc : ilkAd;
+          const y = x ? x.querySelector("small") : null;
+          if (mt) { mt.textContent = y ? y.textContent : ""; mt.hidden = !mt.textContent; }
+          baglar.forEach((a) => {
+            const t = a.dataset.bcTaban;
+            if (!t) return;
+            let u;
+            try { u = new URL(t, location.href); } catch (e) { return; }
+            u.searchParams.set("burc", x.dataset.bc);
+            a.setAttribute("href", u.href.replace(/\?[^#]*/, (q) => q.replace(/\+/g, "%20")));
+          });
+        };
+        b.forEach((x) => x.addEventListener("click", () => sec(x)));
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      burcCark(s, P, az);
+    });
+  })();
+</script>
+<section class="b0004-iletisim-rozet-serit" aria-labelledby="b0004-iletisim-rozet-serit-juf3ww-b">
+  <div class="b0004-iletisim-rozet-serit-ic">
+    
+    <div class="b0004-iletisim-rozet-serit-rz-sahne"><div class="b0004-iletisim-rozet-serit-rz-bas"><p class="b0004-iletisim-rozet-serit-ust">İletişim</p><h2 class="b0004-iletisim-rozet-serit-baslik" id="b0004-iletisim-rozet-serit-juf3ww-b">Deftere bir satır yazın</h2><p class="b0004-iletisim-rozet-serit-metin">Haftalık not, okur sorusu ya da düzeltme için yazın; iki iş günü içinde yanıtlarız. Bu demo sitede veri saklanmaz.</p></div><ul class="b0004-iletisim-rozet-serit-rz-serit" role="list"><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:0"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r0" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r0">Adres · Adres · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">location_on</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">Adres</span><a class="b0004-iletisim-rozet-serit-deger" href="https://www.google.com/maps/search/?api=1&amp;query=Atat%C3%BCrk%20Bulvar%C4%B1%20No%3A%2058%2C%20Odunpazar%C4%B1%2C%20Eski%C5%9Fehir%20(kurgusal%20adres)" target="_blank" rel="noopener noreferrer">Atatürk Bulvarı No: 58, Odunpazarı, Eskişehir (kurgusal adres)</a><a class="b0004-iletisim-rozet-serit-eylem" href="https://www.google.com/maps/search/?api=1&amp;query=Atat%C3%BCrk%20Bulvar%C4%B1%20No%3A%2058%2C%20Odunpazar%C4%B1%2C%20Eski%C5%9Fehir%20(kurgusal%20adres)" target="_blank" rel="noopener noreferrer">Yol tarifi al<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:1"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r1" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r1">Telefon · Telefon · Telefon · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">call</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">Telefon</span><a class="b0004-iletisim-rozet-serit-deger" href="tel:+902220873333"><bdi dir="ltr">+90 222 087 33 33</bdi></a><a class="b0004-iletisim-rozet-serit-eylem" href="tel:+902220873333">Telefon<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:2"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r2" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r2">WhatsApp · WhatsApp · WhatsApp · WhatsApp · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">chat</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">WhatsApp</span><a class="b0004-iletisim-rozet-serit-deger" href="https://wa.me/902220873333?text=Merhaba%20G%C3%B6k%20Defteri%2C%20bir%20sorum%20var." target="_blank" rel="noopener noreferrer"><bdi dir="ltr">+902220873333</bdi></a><a class="b0004-iletisim-rozet-serit-eylem" href="https://wa.me/902220873333?text=Merhaba%20G%C3%B6k%20Defteri%2C%20bir%20sorum%20var." target="_blank" rel="noopener noreferrer">WhatsApp<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:3"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r3" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r3">E-posta · E-posta · E-posta · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">mail</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">E-posta</span><a class="b0004-iletisim-rozet-serit-deger" href="mailto:not@gokdefteri.example"><bdi dir="ltr">not@gokdefteri.example</bdi></a><a class="b0004-iletisim-rozet-serit-eylem" href="mailto:not@gokdefteri.example">E-posta<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:4"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r4" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r4">Çalışma saatleri · Çalışma saatleri · Çalışma saatleri · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">schedule</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">Çalışma saatleri</span><span class="b0004-iletisim-rozet-serit-deger">Pzt–Cum 11:00 – 19:00 (yazışma)</span></span></li></ul></div>
+  </div>
+</section>
+
+
+</div>
+  <div id="footer"><footer class="f0000-alt-pano-pin f0000-alt-pano-pin--bassiz" >
+  <div class="f0000-alt-pano-pin-ic">
+    
+    <div class="f0000-alt-pano-pin-pp-pano"><div class="f0000-alt-pano-pin-pp-not f0000-alt-pano-pin-pp-not--marka"><a class="f0000-alt-pano-pin-logo" href="/tr/" aria-label="Anasayfa - Gök Defteri"><img src="/img/logo.png" alt="Gök Defteri" loading="lazy" decoding="async" /></a><p class="f0000-alt-pano-pin-hakkinda">On iki burç için kısa notlar, yılın dört kapısı ve günün notu. Kurgusal demo; Notlar eğlence ve yorum içindir; kesin öngörü değildir.</p><div class="f0000-alt-pano-pin-cta"><a class="f0000-alt-pano-pin-dugme" href="/tr/iletisim/">Bize yazın<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></div></div><div class="f0000-alt-pano-pin-pp-not"><h2 class="f0000-alt-pano-pin-pp-baslik">Sayfalar</h2><ul class="f0000-alt-pano-pin-sayfalar"><li><a class="f0000-alt-pano-pin-bag" href="/tr/" aria-current="page">Anasayfa</a></li><li><a class="f0000-alt-pano-pin-bag" href="/tr/hakkimizda/">Kurallar</a></li><li><a class="f0000-alt-pano-pin-bag" href="/tr/iletisim/">İletişim</a></li></ul></div><div class="f0000-alt-pano-pin-pp-not"><h2 class="f0000-alt-pano-pin-pp-baslik">Kısayollar</h2><ul class="f0000-alt-pano-pin-baglantilar"><li><a class="f0000-alt-pano-pin-bag" href="/tr/hakkimizda/">Defterin kuralları</a></li><li><a class="f0000-alt-pano-pin-bag" href="/tr/iletisim/">Bize yazın</a></li></ul></div><div class="f0000-alt-pano-pin-pp-not f0000-alt-pano-pin-pp-not--il"><h2 class="f0000-alt-pano-pin-pp-baslik">Bize Ulaşın</h2><ul class="f0000-alt-pano-pin-iletisim"><li class="f0000-alt-pano-pin-il f0000-alt-pano-pin-il--adres"><span class="f0000-alt-pano-pin-il-ikon material-symbols-outlined" aria-hidden="true">location_on</span><span class="f0000-alt-pano-pin-il-ic"><span class="f0000-alt-pano-pin-il-etiket">Adres</span><span>Atatürk Bulvarı No: 58, Odunpazarı, Eskişehir (kurgusal adres)</span></span></li><li class="f0000-alt-pano-pin-il f0000-alt-pano-pin-il--tel"><span class="f0000-alt-pano-pin-il-ikon material-symbols-outlined" aria-hidden="true">call</span><span class="f0000-alt-pano-pin-il-ic"><span class="f0000-alt-pano-pin-il-etiket">Telefon</span><a class="f0000-alt-pano-pin-bag" href="tel:+902220873333"><bdi dir="ltr">+90 222 087 33 33</bdi></a></span></li><li class="f0000-alt-pano-pin-il f0000-alt-pano-pin-il--posta"><span class="f0000-alt-pano-pin-il-ikon material-symbols-outlined" aria-hidden="true">mail</span><span class="f0000-alt-pano-pin-il-ic"><span class="f0000-alt-pano-pin-il-etiket">E-posta</span><a class="f0000-alt-pano-pin-bag" href="mailto:not@gokdefteri.example"><bdi dir="ltr">not@gokdefteri.example</bdi></a></span></li></ul></div><div class="f0000-alt-pano-pin-pp-not"><h2 class="f0000-alt-pano-pin-pp-baslik">Çalışma saatleri</h2><dl class="f0000-alt-pano-pin-saatler"><div class="f0000-alt-pano-pin-saat"><dt>Pazartesi–Cuma</dt><dd><bdi dir="ltr">11:00 – 19:00</bdi></dd></div></dl></div></div><div class="f0000-alt-pano-pin-pp-dip"><p class="f0000-alt-pano-pin-telif"><span>&copy; 2026 Gök Defteri</span><span>Tüm hakları saklıdır</span></p><ul class="f0000-alt-pano-pin-pp-yasal"><li><a class="f0000-alt-pano-pin-bag" href="/tr/kisiselveriler/">KVKK</a></li><li><a class="f0000-alt-pano-pin-bag" href="/tr/gizlilikpolitikasi/">Gizlilik</a></li><li><a class="f0000-alt-pano-pin-bag" href="/tr/yasaluyari/">Yasal uyarı</a></li></ul><div class="f0000-alt-pano-pin-dil"><nav class="wm-langbar" aria-label="Dil Seçici"><ul><li class="wm-lang-item wm-lang-active"><a href="/tr/" hreflang="tr" lang="tr" aria-current="true">TR</a></li><li class="wm-lang-item"><a href="/en/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li></ul></nav></div><a class="f0000-alt-pano-pin-yukari" href="#" aria-label="Başa dön"><span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span></a></div>
+  </div>
+</footer>
+
+
+<div class="f0001-dk" role="contentinfo" aria-label="Demo bilgisi">
+  <p class="f0001-dk-text">Bu demo <bdi class="f0001-dk-brand" dir="ltr">Webyapar</bdi> tarafından hazırlanmıştır — <a class="f0001-dk-cta" href="https://webyapar.com/temalar#burc-3" target="_blank" rel="noopener noreferrer"><span>Bu temayı iste</span><span class="mx-visually-hidden"> (yeni sekmede açılır)</span><span class="material-symbols-outlined mx-flip f0001-dk-arrow" aria-hidden="true">arrow_forward</span></a></p>
+</div>
+
+<nav class="wm-yasal" aria-label="Kurumsal ve Yasal" style="box-sizing:border-box;width:100%;max-width:100%;padding:12px 16px;background:var(--mx-site-bg, #FAF3E8);color:var(--mx-site-text, #111111);display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;justify-content:center;text-align:center;overflow-wrap:anywhere"><strong style="color:var(--mx-site-text, #111111)">Kurumsal ve Yasal</strong><a href="/tr/misyon/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Misyon</a><a href="/tr/vizyon/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Vizyon</a><a href="/tr/kalitepolitikamiz/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Kalite Politikamız</a><a href="/tr/kullanicahaklari/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Kullanıcı Hakları</a></nav></div>
+
+  
+
+  <script defer src="/src/swiper-bundle.min.js"></script>
+  <script defer src="/src/mx-ui.js?v=5c89ee1c"></script>
+  <script defer src="/src/mx-store.js?v=76e4af87"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=b2eba89f"></script>
+  <script defer src="/src/cookie.js?v=120cf97b"></script>
+
+</body>
+
+</html>
