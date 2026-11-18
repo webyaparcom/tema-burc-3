@@ -7,7 +7,9 @@
       "name": {
         "tr": "Kurallar",
         "en": "Rules",
-        "ar": "القواعد"
+        "ar": "القواعد",
+        "de": "Regeln",
+        "ru": "Правила"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -28,14 +30,18 @@
       "description": {
         "tr": "Defterin altı kuralı ve yılın dört kapısı.",
         "en": "The notebook’s six rules and the four gates of the year.",
-        "ar": "قواعد الدفتر الست وأبواب السنة الأربعة."
+        "ar": "قواعد الدفتر الست وأبواب السنة الأربعة.",
+        "de": "Die sechs Regeln des Notizbuchs und die vier Tore des Jahres.",
+        "ru": "Шесть правил блокнота и четыре врат года."
       }
     },
     {
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -56,7 +62,9 @@
       "description": {
         "tr": "Haftalık not ve okur soruları için yazın.",
         "en": "Write for the weekly note and reader questions.",
-        "ar": "اكتب لطلب الملاحظة الأسبوعية وأسئلة القراء."
+        "ar": "اكتب لطلب الملاحظة الأسبوعية وأسئلة القراء.",
+        "de": "Schreiben Sie uns für die wöchentliche Notiz und Leserfragen.",
+        "ru": "Напишите нам, чтобы получать еженедельную заметку и вопросы читателей."
       }
     }
   ]

@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Notlar kesin öngörü değildir; sağlık, hukuk ve para konularında öneri vermeyiz; okur mesajları yalnız yanıt için kullanılır.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>Notes are not definite predictions; we give no advice on health, legal or money matters; reader messages are used only to reply.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>الملاحظات ليست تنبؤات مؤكدة؛ لا نقدّم نصائح في الصحة أو القانون أو المال، وتُستخدم رسائل القراء للرد فقط.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>الملاحظات ليست تنبؤات مؤكدة؛ لا نقدّم نصائح في الصحة أو القانون أو المال، وتُستخدم رسائل القراء للرد فقط.</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>Die Notizen sind keine sicheren Prognosen; zu Gesundheit, Recht und Geld geben wir keine Empfehlungen; Leserzuschriften werden nur für die Antwort verwendet.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Заметки не являются точным прогнозом; по вопросам здоровья, права и денег мы советов не даём; сообщения читателей используются только для ответа.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T22:43:17.077Z",
   "update": "2026-11-16T22:43:17.429Z",
