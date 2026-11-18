@@ -4,12 +4,16 @@
   "description": {
     "tr": "Gök Defteri: on iki burç için kısa notlar, yılın dört kapısı ve günün eğlenceli notu. Eğlence ve yorum amaçlıdır; kesin öngörü değildir. Demo site.",
     "en": "Gok Defteri: short notes for the twelve signs, the four gates of the year and a playful note of the day. For fun and interpretation; not definite predictions. Demo site.",
-    "ar": "غوك دفتري: ملاحظات قصيرة للأبراج الاثني عشر وأبواب السنة الأربعة وملاحظة اليوم المرحة. للترفيه والتأويل وليست تنبؤات مؤكدة. موقع تجريبي."
+    "ar": "غوك دفتري: ملاحظات قصيرة للأبراج الاثني عشر وأبواب السنة الأربعة وملاحظة اليوم المرحة. للترفيه والتأويل وليست تنبؤات مؤكدة. موقع تجريبي.",
+    "de": "Gök Defteri: kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die unterhaltsame Notiz des Tages. Zur Unterhaltung und Deutung gedacht; keine feste Vorhersage. Demo-Website.",
+    "ru": "Gök Defteri: краткие заметки для двенадцати знаков зодиака, четыре врат года и забавная заметка дня. Для развлечения и толкования; это не точное предсказание. Демо-сайт."
   },
   "keyword": {
     "tr": "burç notları, burç özellikleri, ekinoks, gündönümü, günün burç notu",
     "en": "zodiac notes, zodiac traits, equinox, solstice, zodiac note of the day",
-    "ar": "ملاحظات الأبراج، صفات الأبراج، الاعتدال، الانقلاب، ملاحظة اليوم"
+    "ar": "ملاحظات الأبراج، صفات الأبراج، الاعتدال، الانقلاب، ملاحظة اليوم",
+    "de": "Horoskop-Notizen, Horoskop-Merkmale, Äquinoktium, Sonnenwende, Horoskop des Tages",
+    "ru": "Заметки по гороскопу, черты гороскопа, равноденствие, солнцестояние, гороскоп дня"
   },
   "category": "Kurumsal",
   "name": "Gök Defteri",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

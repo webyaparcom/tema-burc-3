@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>Gök Defteri</title>
+  <meta name="description" content="Gök Defteri: kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die unterhaltsame Notiz des Tages. Zur Unterhaltung und Deutung gedacht; keine feste Vorhersage. Demo-Website." />
+  <meta name="keywords" content="Horoskop-Notizen, Horoskop-Merkmale, Äquinoktium, Sonnenwende, Horoskop des Tages" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://burc-3.webyapar.com/de/" />
+  <link rel="alternate" hreflang="tr" href="https://burc-3.webyapar.com/tr/" />
+  <link rel="alternate" hreflang="en" href="https://burc-3.webyapar.com/en/" />
+  <link rel="alternate" hreflang="ar" href="https://burc-3.webyapar.com/ar/" />
+  <link rel="alternate" hreflang="de" href="https://burc-3.webyapar.com/de/" />
+  <link rel="alternate" hreflang="ru" href="https://burc-3.webyapar.com/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://burc-3.webyapar.com/tr/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gök Defteri" />
+  <meta property="og:description" content="Gök Defteri: kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die unterhaltsame Notiz des Tages. Zur Unterhaltung und Deutung gedacht; keine feste Vorhersage. Demo-Website." />
+  <meta property="og:url" content="https://burc-3.webyapar.com/de/" />
+  <meta property="og:image" content="https://burc-3.webyapar.com/img/logo.png" />
+  <meta property="og:image:alt" content="Gök Defteri" />
+  <meta property="og:site_name" content="Gök Defteri" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_SA" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gök Defteri" />
+  <meta name="twitter:description" content="Gök Defteri: kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die unterhaltsame Notiz des Tages. Zur Unterhaltung und Deutung gedacht; keine feste Vorhersage. Demo-Website." />
+  <meta name="twitter:image" content="https://burc-3.webyapar.com/img/logo.png" />
+
+  <meta name="theme-color" content="#B5532E" />
+  <meta name="mx-api-base" content="none" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/rubik.css?v=d8bf8876" />
+  <link rel="stylesheet" href="/src/fonts/dm-serif-display.css?v=741b1ef9" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=f0305d2e" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=af58488b" />
+  <link rel="stylesheet" href="/src/css.css?v=01bc1344" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=33d83fcb" />
+  
+  <link rel="stylesheet" href="/src/mx-ui.css?v=1e0459e3" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=627a4927" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=86fd23c5" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=ca16ef6e" />
+  <link rel="shortcut icon" href="/img/icon.png?v=f70f22fc" type="image/png" />
+  <link rel="apple-touch-icon" href="/img/icon.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://burc-3.webyapar.com/#website",
+      "url": "https://burc-3.webyapar.com/",
+      "name": "Gök Defteri",
+      "description": "Gök Defteri: kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die unterhaltsame Notiz des Tages. Zur Unterhaltung und Deutung gedacht; keine feste Vorhersage. Demo-Website.",
+      "inLanguage": "de",
+      "publisher": {
+        "@id": "https://burc-3.webyapar.com/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://burc-3.webyapar.com/#organization",
+      "name": "Gök Defteri",
+      "url": "https://burc-3.webyapar.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://burc-3.webyapar.com/img/logo.png"
+      },
+      "image": "https://burc-3.webyapar.com/img/logo.png",
+      "description": "Gök Defteri: kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die unterhaltsame Notiz des Tages. Zur Unterhaltung und Deutung gedacht; keine feste Vorhersage. Demo-Website."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://burc-3.webyapar.com/de/#webpage",
+      "url": "https://burc-3.webyapar.com/de/",
+      "name": "Gök Defteri",
+      "description": "Gök Defteri: kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die unterhaltsame Notiz des Tages. Zur Unterhaltung und Deutung gedacht; keine feste Vorhersage. Demo-Website.",
+      "inLanguage": "de",
+      "isPartOf": {
+        "@id": "https://burc-3.webyapar.com/#website"
+      },
+      "about": {
+        "@id": "https://burc-3.webyapar.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://burc-3.webyapar.com/img/logo.png"
+      }
+    }
+  ]
+}
+</script>
+  
+<link rel="stylesheet" href="style.css?v=6dabd77e">
+</head>
+
+<body>
+  <a class="mx-skip-link" href="#content">Zum Inhalt springen</a>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
+  <div id="header"><div class="h0000-db" id="db-k8db01" role="region" aria-label="Hinweis zur Demo-Website" data-tone="info" style="--db-bg:var(--mx-site-text, #1b1b1b);--db-fg:var(--mx-site-bg, #ffffff)">
+  <span class="material-symbols-outlined h0000-db-icon" aria-hidden="true">info</span>
+  <p class="h0000-db-text">Dies ist eine Demo-Website — die Inhalte sind fiktiv, es wird keine Zahlung entgegengenommen</p>
+  <a class="h0000-db-cta" href="https://webyapar.com/temalar" target="_blank" rel="noopener noreferrer">
+    <span>Dieses Thema anfordern</span><span class="mx-visually-hidden"> (öffnet in einem neuen Tab)</span>
+    <span class="material-symbols-outlined mx-flip h0000-db-arrow" aria-hidden="true">arrow_forward</span>
+  </a>
+  
+</div>
+<script defer src="https://webyapar.com/api/portal/tema-hata.js"></script>
+
+<script>
+  
+  (function () {
+    var kok = document.getElementById("db-k8db01");
+    if (!kok) {
+      return;
+    }
+    var itilenler = [];
+    var gorulen = [];
+
+    function ustaTasi() {
+      var govde = document.body;
+      if (!govde || kok.parentNode === govde) {
+        return;
+      }
+      var ilk = document.getElementById("header");
+      if (ilk && ilk.parentNode === govde) {
+        govde.insertBefore(kok, ilk);
+      } else {
+        govde.insertBefore(kok, govde.firstChild);
+      }
+    }
+
+    function adayMi(el) {
+      if (el === kok || kok.contains(el) || el.nodeType !== 1) {
+        return false;
+      }
+      var cs = window.getComputedStyle(el);
+      if ((cs.position !== "fixed" && cs.position !== "sticky") || cs.display === "none") {
+        return false;
+      }
+      
+      return parseFloat(cs.top) === 0 && el.offsetHeight > 0 && el.offsetHeight <= 200;
+    }
+
+    function it() {
+      var h = kok.offsetHeight;
+      document.documentElement.style.setProperty("--mx-demo-bandi-h", h + "px");
+      var liste = document.querySelectorAll("#header *, body > *");
+      for (var i = 0; i < liste.length; i++) {
+        var el = liste[i];
+        if (gorulen.indexOf(el) !== -1) {
+          continue;
+        }
+        if (adayMi(el)) {
+          gorulen.push(el);
+          itilenler.push(el);
+        }
+      }
+      for (var j = 0; j < itilenler.length; j++) {
+        itilenler[j].style.top = h + "px";
+      }
+    }
+
+    ustaTasi();
+    it();
+    window.addEventListener("load", function () {
+      ustaTasi();
+      it();
+      setTimeout(it, 400);
+      setTimeout(it, 1500);
+    });
+    window.addEventListener("resize", it);
+    if (window.ResizeObserver) {
+      new window.ResizeObserver(it).observe(kok);
+    }
+  })();
+</script>
+<header class="h0001-ust-radyal h0001-ust-radyal--bassiz" >
+  <div class="h0001-ust-radyal-ic">
+    
+    <div class="h0001-ust-radyal-yuva"><a class="h0001-ust-radyal-logo" href="/de/" aria-label="Startseite - Gök Defteri"><img src="/img/logo.png" alt="Gök Defteri" loading="eager" decoding="async" /></a><nav class="h0001-ust-radyal-nav h0001-ust-radyal-nav--yedek" aria-label="Navigation"><ul class="h0001-ust-radyal-yedekliste"><li><a class="h0001-ust-radyal-oge" href="/de/" aria-current="page">Startseite</a></li><li><a class="h0001-ust-radyal-oge" href="/de/hakkimizda/">Regeln</a></li><li><a class="h0001-ust-radyal-oge" href="/de/iletisim/">Kontakt</a></li></ul></nav><div class="h0001-ust-radyal-yuvauc"><a class="h0001-ust-radyal-cta" href="/de/iletisim/">Schreiben Sie uns<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a><button type="button" class="h0001-ust-radyal-ac h0001-ust-radyal-dugme" aria-expanded="false" aria-controls="h0001-ust-radyal-fqfu41-panel" aria-label="Menü umschalten"><span class="h0001-ust-radyal-ac-ikon" aria-hidden="true"><span></span><span></span><span></span></span></button></div></div><div class="h0001-ust-radyal-perde" hidden></div><div class="h0001-ust-radyal-panel" id="h0001-ust-radyal-fqfu41-panel" role="dialog" aria-modal="true" aria-label="Menü" hidden><nav class="h0001-ust-radyal-cember" aria-label="Navigation"><ul class="h0001-ust-radyal-kadran" style="--n: 3"><li style="--i: 0"><a class="h0001-ust-radyal-dilim" href="/de/" aria-current="page">Startseite</a></li><li style="--i: 1"><a class="h0001-ust-radyal-dilim" href="/de/hakkimizda/">Regeln</a></li><li style="--i: 2"><a class="h0001-ust-radyal-dilim" href="/de/iletisim/">Kontakt</a></li></ul><div class="h0001-ust-radyal-gobek"><button type="button" class="h0001-ust-radyal-kapat" aria-label="Menü schließen"><span class="material-symbols-outlined" aria-hidden="true">close</span></button></div></nav><div class="h0001-ust-radyal-palt"><a class="h0001-ust-radyal-tel" href="tel:+902220873333"><span class="material-symbols-outlined" aria-hidden="true">call</span><bdi dir="ltr">+90 222 087 33 33</bdi></a><div class="h0001-ust-radyal-dil"><nav class="wm-langbar wm-langbar--dd" aria-label="Sprachauswahl" data-wm-lang="dd" data-wm-lang-n="5"><button type="button" class="wm-lang-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Sprachauswahl: Deutsch"><span class="wm-lang-code">DE</span><svg class="wm-lang-chev" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><ul class="wm-lang-menu"><li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr" dir="ltr"><span class="wm-lang-code">TR</span><span class="wm-lang-name">Türkçe</span></a></li><li class="wm-lang-item"><a href="/en/" hreflang="en" lang="en" dir="ltr"><span class="wm-lang-code">EN</span><span class="wm-lang-name">English</span></a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar" dir="rtl"><span class="wm-lang-code">AR</span><span class="wm-lang-name">العربية</span></a></li><li class="wm-lang-item wm-lang-active"><a href="/de/" hreflang="de" lang="de" dir="ltr" aria-current="true"><span class="wm-lang-code">DE</span><span class="wm-lang-name">Deutsch</span></a></li><li class="wm-lang-item"><a href="/ru/" hreflang="ru" lang="ru" dir="ltr"><span class="wm-lang-code">RU</span><span class="wm-lang-name">Русский</span></a></li></ul></nav></div><a class="h0001-ust-radyal-cta" href="/de/iletisim/">Schreiben Sie uns<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></div></div>
+  </div>
+</header>
+
+
+<script>
+  (() => {
+    const P = "h0001-ust-radyal";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const cekmece = (s, P) => {
+          const ac = s.querySelector("." + P + "-ac");
+          const panel = ac ? document.getElementById(ac.getAttribute("aria-controls")) : null;
+          if (!ac || !panel) return;
+          s.classList.add(P + "--js");
+          const perde = s.querySelector("." + P + "-perde");
+          const modal = panel.getAttribute("aria-modal") === "true";
+          const kok = document.documentElement;
+          const kapa = (odak) => {
+            if (panel.hidden) return;
+            panel.hidden = true;
+            if (perde) perde.hidden = true;
+            ac.setAttribute("aria-expanded", "false");
+            s.classList.remove(P + "--acik");
+            if (modal) kok.style.overflow = "";
+            if (odak) ac.focus();
+          };
+          const aci = () => {
+            panel.hidden = false;
+            if (perde) perde.hidden = false;
+            ac.setAttribute("aria-expanded", "true");
+            s.classList.add(P + "--acik");
+            if (modal) kok.style.overflow = "hidden";
+            const ilk = panel.querySelector("a[href], button");
+            if (ilk) ilk.focus();
+          };
+          ac.addEventListener("click", () => (panel.hidden ? aci() : kapa(true)));
+          panel.addEventListener("click", (e) => {
+            if (e.target.closest("." + P + "-kapat")) kapa(true);
+            else if (e.target.closest("a[href]")) kapa(false);
+          });
+          if (perde) perde.addEventListener("click", () => kapa(true));
+          document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) kapa(true); });
+          if (modal) {
+            panel.addEventListener("keydown", (e) => {
+              if (e.key !== "Tab") return;
+              const o = [...panel.querySelectorAll("a[href], button:not([disabled])")].filter((x) => x.offsetParent !== null);
+              if (!o.length) return;
+              if (e.shiftKey && document.activeElement === o[0]) { e.preventDefault(); o[o.length - 1].focus(); }
+              else if (!e.shiftKey && document.activeElement === o[o.length - 1]) { e.preventDefault(); o[0].focus(); }
+            });
+          }
+          const g = Number(ac.dataset.genis);
+          if (g && window.matchMedia) window.matchMedia(`(min-width: ${g}px)`).addEventListener("change", (m) => { if (m.matches) kapa(false); });
+        };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      cekmece(s, P, az);
+    });
+  })();
+</script>
+</div>
+  <div id="content"><h1 style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Gök Defteri</h1><section class="b0000-burc-izgara" aria-labelledby="b0000-burc-izgara-m2f7vx-b">
+  <div class="b0000-burc-izgara-ic">
+    
+    <div class="b0000-burc-izgara-giris"><p class="b0000-burc-izgara-ust">Sternzeichen-Notizen · zur Unterhaltung</p><h2 class="b0000-burc-izgara-baslik" id="b0000-burc-izgara-m2f7vx-b">Gök Defteri: zwölf Sternzeichen, zwölf kurze Notizen</h2><p class="b0000-burc-izgara-metin">Tippen Sie auf Ihr Sternzeichen, um den Datumsbereich, das Element und die kurze Notiz auf der mittleren Seite zu öffnen. Die Notizen dienen der Unterhaltung und Interpretation; sie sind keine verbindlichen Vorhersagen.</p></div><div class="b0000-burc-izgara-burcler b0000-burc-izgara-burcler--halka"><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♈︎</span><h3 class="b0000-burc-izgara-bad">Widder</h3><p class="b0000-burc-izgara-btarih">21. März – 19. April</p><p class="b0000-burc-izgara-boge">Feuer</p><p class="b0000-burc-izgara-bmetin">Wer im Heft die erste Seite aufschlägt; er fängt gern mit der Arbeit an.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Widder" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♉︎</span><h3 class="b0000-burc-izgara-bad">Stier</h3><p class="b0000-burc-izgara-btarih">20. April – 20. Mai</p><p class="b0000-burc-izgara-boge">Boden</p><p class="b0000-burc-izgara-bmetin">Geduldig und genussliebend; weiß, was einen schönen Nachmittag ausmacht.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Stier" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♊︎</span><h3 class="b0000-burc-izgara-bad">Zwillinge</h3><p class="b0000-burc-izgara-btarih">21. Mai – 20. Juni</p><p class="b0000-burc-izgara-boge">Luft</p><p class="b0000-burc-izgara-bmetin">Neugierig und gesprächig; liest zwei Bücher gleichzeitig.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Zwillinge" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♋︎</span><h3 class="b0000-burc-izgara-bad">Krebs</h3><p class="b0000-burc-izgara-btarih">21. Juni – 22. Juli</p><p class="b0000-burc-izgara-boge">Wasser</p><p class="b0000-burc-izgara-bmetin">Zahm und beschützend; bewahrt die Fotoalben.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Krebs" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♌︎</span><h3 class="b0000-burc-izgara-bad">Löwe</h3><p class="b0000-burc-izgara-btarih">23. Juli – 22. August</p><p class="b0000-burc-izgara-boge">Feuer</p><p class="b0000-burc-izgara-bmetin">Er liebt die Bühne; am Tisch erzählt er die Geschichte.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Löwe" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♍︎</span><h3 class="b0000-burc-izgara-bad">Jungfrau</h3><p class="b0000-burc-izgara-btarih">23. August – 22. September</p><p class="b0000-burc-izgara-boge">Boden</p><p class="b0000-burc-izgara-bmetin">Ordentlich und aufmerksam; sieht das Detail als Erste/r.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Jungfrau" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♎︎</span><h3 class="b0000-burc-izgara-bad">Waage</h3><p class="b0000-burc-izgara-btarih">23. September – 22. Oktober</p><p class="b0000-burc-izgara-boge">Luft</p><p class="b0000-burc-izgara-bmetin">Sucht das Gleichgewicht; hört beide Seiten an.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Waage" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♏︎</span><h3 class="b0000-burc-izgara-bad">Skorpion</h3><p class="b0000-burc-izgara-btarih">23. Oktober – 21. November</p><p class="b0000-burc-izgara-boge">Wasser</p><p class="b0000-burc-izgara-bmetin">Tiefgründig und verschwiegen; liebt Kriminalromane.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Skorpion" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♐︎</span><h3 class="b0000-burc-izgara-bad">Feder</h3><p class="b0000-burc-izgara-btarih">22. November – 21. Dezember</p><p class="b0000-burc-izgara-boge">Feuer</p><p class="b0000-burc-izgara-bmetin">Reisender und Optimist; sucht einen neuen Ort auf der Karte.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Feder" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♑︎</span><h3 class="b0000-burc-izgara-bad">Steinbock</h3><p class="b0000-burc-izgara-btarih">22. Dezember – 19. Januar</p><p class="b0000-burc-izgara-boge">Boden</p><p class="b0000-burc-izgara-bmetin">Beständig und planvoll; füllt den Kalender mit Bleistift aus.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Steinbock" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♒︎</span><h3 class="b0000-burc-izgara-bad">Eimer</h3><p class="b0000-burc-izgara-btarih">20. Januar – 18. Februar</p><p class="b0000-burc-izgara-boge">Luft</p><p class="b0000-burc-izgara-bmetin">Originell und innovativ; ein Freund seltsamer Ideen.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Eimer" hidden></button></article><article class="b0000-burc-izgara-burc" data-burc><div class="b0000-burc-izgara-bic" data-bic><span class="b0000-burc-izgara-sembol" aria-hidden="true">♓︎</span><h3 class="b0000-burc-izgara-bad">Fisch</h3><p class="b0000-burc-izgara-btarih">19. Februar – 20. März</p><p class="b0000-burc-izgara-boge">Wasser</p><p class="b0000-burc-izgara-bmetin">Träumerisch und fürsorglich; denkt in Musik.</p></div><button type="button" class="b0000-burc-izgara-bdug" data-bsec aria-pressed="false" aria-controls="b0000-burc-izgara-m2f7vx-pn" aria-label="Fisch" hidden></button></article><div class="b0000-burc-izgara-panel" id="b0000-burc-izgara-m2f7vx-pn" data-bpanel aria-live="polite" hidden></div></div><div class="b0000-burc-izgara-alt"><div class="b0000-burc-izgara-cta"><a class="b0000-burc-izgara-dugme" href="/de/iletisim/">Wöchentliche Notiz anfordern<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></div></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0000-burc-izgara";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const burcSec = (s, P) => {
+        const bt = [...s.querySelectorAll("[data-bsec]")];
+        const pn = s.querySelector("[data-bpanel]");
+        if (!bt.length || !pn) return;
+        s.classList.add(P + "--js");
+        const sec = (i) => {
+          const kay = bt[i].closest("[data-burc]");
+          bt.forEach((b, j) => b.setAttribute("aria-pressed", String(j === i)));
+          s.querySelectorAll("[data-burc]").forEach((z) => z.classList.toggle(P + "--secili", z === kay));
+          const bic = kay && kay.querySelector("[data-bic]");
+          pn.replaceChildren(...(bic ? [...bic.children].map((c) => c.cloneNode(true)) : []));
+          pn.hidden = false;
+          pn.classList.remove(P + "--tazele");
+          void pn.offsetWidth;
+          pn.classList.add(P + "--tazele");
+        };
+        bt.forEach((b, i) => { b.hidden = false; b.addEventListener("click", () => sec(i)); });
+        sec(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      burcSec(s, P, az);
+    });
+  })();
+</script>
+<section class="b0001-deger-burc-cark" aria-labelledby="b0001-deger-burc-cark-xdtjl7-b">
+  <div class="b0001-deger-burc-cark-ic">
+    <header class="b0001-deger-burc-cark-bas"><p class="b0001-deger-burc-cark-ust">Die Regeln des Hefts</p><h2 class="b0001-deger-burc-cark-baslik" id="b0001-deger-burc-cark-xdtjl7-b">Sechs Regeln, ein Rad</h2><p class="b0001-deger-burc-cark-metin">Drehen Sie das Rad oder tippen Sie auf ein Segment; die Regel unter dem Zeiger öffnet sich daneben.</p></header>
+    <div class="b0001-deger-burc-cark-duzen"><div class="b0001-deger-burc-cark-sahne"><div class="b0001-deger-burc-cark-cark" data-cark style="--n: 6"><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 0" data-cark-git="0" aria-pressed="true"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">sentiment_satisfied</span><span class="b0001-deger-burc-cark-dad">Verspielter Ton</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 1" data-cark-git="1" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">block</span><span class="b0001-deger-burc-cark-dad">Keine sicheren Vorhersagen</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 2" data-cark-git="2" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">short_text</span><span class="b0001-deger-burc-cark-dad">Kurz und klar</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 3" data-cark-git="3" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">health_and_safety</span><span class="b0001-deger-burc-cark-dad">Keine Empfehlung</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 4" data-cark-git="4" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">public</span><span class="b0001-deger-burc-cark-dad">Echter Himmel</span></span></button><button type="button" class="b0001-deger-burc-cark-dilim" style="--i: 5" data-cark-git="5" aria-pressed="false"><span class="b0001-deger-burc-cark-dic"><span class="b0001-deger-burc-cark-dikon material-symbols-outlined" aria-hidden="true">lock</span><span class="b0001-deger-burc-cark-dad">Ihre Nachricht bleibt bei Ihnen</span></span></button><span class="b0001-deger-burc-cark-gobek" aria-hidden="true"></span></div><span class="b0001-deger-burc-cark-ibre" aria-hidden="true"></span></div><div class="b0001-deger-burc-cark-yan"><ol class="b0001-deger-burc-cark-panel" aria-live="polite"><li class="b0001-deger-burc-cark-oge" data-cark-panel="0"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">01 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">sentiment_satisfied</span><p class="b0001-deger-burc-cark-etiket">01</p><h3 class="b0001-deger-burc-cark-kbaslik">Verspielter Ton</h3><p class="b0001-deger-burc-cark-kmetin">Notizen werden geschrieben, um zu lächeln; sie schrecken niemanden ab.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="1"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">02 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">block</span><p class="b0001-deger-burc-cark-etiket">02</p><h3 class="b0001-deger-burc-cark-kbaslik">Keine sicheren Vorhersagen</h3><p class="b0001-deger-burc-cark-kmetin">Wir schreiben «könnte» statt «wird»; die Zukunft steht in niemandes Buch.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="2"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">03 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">short_text</span><p class="b0001-deger-burc-cark-etiket">03</p><h3 class="b0001-deger-burc-cark-kbaslik">Kurz und klar</h3><p class="b0001-deger-burc-cark-kmetin">Ein Satz pro Sternzeichen; wir schreiben keine langen, verworrenen Deutungen.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="3"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">04 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">health_and_safety</span><p class="b0001-deger-burc-cark-etiket">04</p><h3 class="b0001-deger-burc-cark-kbaslik">Keine Empfehlung</h3><p class="b0001-deger-burc-cark-kmetin">Fragen Sie bei Gesundheit, Recht und Geld einen Fachmann; das Heft ist nur eine Deutung.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="4"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">05 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">public</span><p class="b0001-deger-burc-cark-etiket">05</p><h3 class="b0001-deger-burc-cark-kbaslik">Echter Himmel</h3><p class="b0001-deger-burc-cark-kmetin">Daten wie Tagundnachtgleiche und Sonnenwende entnehmen wir astronomischen Quellen.</p></li><li class="b0001-deger-burc-cark-oge" data-cark-panel="5"><p class="b0001-deger-burc-cark-kno" aria-hidden="true"><bdi dir="ltr">06 / 06</bdi></p><span class="b0001-deger-burc-cark-ikon material-symbols-outlined" aria-hidden="true">lock</span><p class="b0001-deger-burc-cark-etiket">06</p><h3 class="b0001-deger-burc-cark-kbaslik">Ihre Nachricht bleibt bei Ihnen</h3><p class="b0001-deger-burc-cark-kmetin">Lesernachrichten werden nur zur Antwort verwendet und nicht veröffentlicht.</p></li></ol><div class="b0001-deger-burc-cark-kontrol"><button type="button" class="b0001-deger-burc-cark-yon" data-cark-yon="geri" aria-label="Zurück"><span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_back</span></button><button type="button" class="b0001-deger-burc-cark-yon" data-cark-yon="ileri" aria-label="Weiter"><span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></button></div></div></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0001-deger-burc-cark";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const cark = (s, P) => {
+        const c = s.querySelector("[data-cark]");
+        const d = [...s.querySelectorAll("[data-cark-git]")];
+        const p = [...s.querySelectorAll("[data-cark-panel]")];
+        if (!c || d.length < 2) return;
+        s.classList.add(P + "--js");
+        const n = d.length;
+        let i = 0;
+        let tur = 0;
+        const git = (j) => {
+          j = ((j % n) + n) % n;
+          let f = j - i;
+          if (f > n / 2) f -= n;
+          if (f < -n / 2) f += n;
+          tur += f;
+          i = j;
+          c.style.setProperty("--aci", String((tur * 360) / n));
+          d.forEach((b, x) => b.setAttribute("aria-pressed", String(x === i)));
+          p.forEach((x, y) => { x.hidden = y !== i; });
+        };
+        d.forEach((b) => b.addEventListener("click", () => git(Number(b.dataset.carkGit) || 0)));
+        s.querySelectorAll("[data-cark-yon]").forEach((b) => b.addEventListener("click", () => git(i + (b.dataset.carkYon === "ileri" ? 1 : -1))));
+        git(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      cark(s, P, az);
+    });
+  })();
+</script>
+<section class="b0002-zaman-kadran" aria-labelledby="b0002-zaman-kadran-xd43ku-b">
+  <div class="b0002-zaman-kadran-ic">
+    <header class="b0002-zaman-kadran-bas"><p class="b0002-zaman-kadran-ust">Die vier Türen des Jahres</p><h2 class="b0002-zaman-kadran-baslik" id="b0002-zaman-kadran-xd43ku-b">Die Reise der Sonne durch das Jahr</h2><p class="b0002-zaman-kadran-metin">Tippen Sie auf ein Datum im Zifferblatt oder navigieren Sie mit den Pfeiltasten. Daten können sich von Jahr zu Jahr um einen Tag verschieben; die Zeichenwechsel fallen auf diese Tore.</p></header>
+    <div class="b0002-zaman-kadran-saat" data-kadran style="--n: 4"><div class="b0002-zaman-kadran-kadran"><span class="b0002-zaman-kadran-ibre" aria-hidden="true"></span><ol class="b0002-zaman-kadran-dilimler"><li class="b0002-zaman-kadran-konum" style="--i: 0"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k0" data-kd="0" aria-current="true"><bdi dir="ltr">20. März</bdi></a></li><li class="b0002-zaman-kadran-konum" style="--i: 1"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k1" data-kd="1"><bdi dir="ltr">21. Juni</bdi></a></li><li class="b0002-zaman-kadran-konum" style="--i: 2"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k2" data-kd="2"><bdi dir="ltr">23. September</bdi></a></li><li class="b0002-zaman-kadran-konum" style="--i: 3"><a class="b0002-zaman-kadran-dilim" href="#b0002-zaman-kadran-xd43ku-k3" data-kd="3"><bdi dir="ltr">21. Dezember</bdi></a></li></ol><div class="b0002-zaman-kadran-merkez" aria-hidden="true"><span class="b0002-zaman-kadran-mikon material-symbols-outlined" data-kd-ikon>local_florist</span><bdi class="b0002-zaman-kadran-myil" dir="ltr" data-kd-yil>20. März</bdi></div></div><ol class="b0002-zaman-kadran-paneller"><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k0" data-etiket="20. März" data-ikon="local_florist"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">local_florist</span><bdi dir="ltr">20. März</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">Frühlings-Tagundnachtgleiche</h3><p class="b0002-zaman-kadran-kmetin">Tag und Nacht sind fast gleich lang; die Widder-Zeit beginnt.</p></div></li><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k1" data-etiket="21. Juni" data-ikon="wb_sunny"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">wb_sunny</span><bdi dir="ltr">21. Juni</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">Sommersonnenwende</h3><p class="b0002-zaman-kadran-kmetin">Der längste Tag des Jahres in der nördlichen Hemisphäre; die Krebszeit beginnt.</p></div></li><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k2" data-etiket="23. September" data-ikon="eco"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">eco</span><bdi dir="ltr">23. September</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">Herbst-Tagundnachtgleiche</h3><p class="b0002-zaman-kadran-kmetin">Tag und Nacht sind wieder im Gleichgewicht; die Waage-Zeit beginnt.</p></div></li><li class="b0002-zaman-kadran-panel" id="b0002-zaman-kadran-xd43ku-k3" data-etiket="21. Dezember" data-ikon="ac_unit"><div class="b0002-zaman-kadran-pyazi"><p class="b0002-zaman-kadran-pyil"><span class="b0002-zaman-kadran-pikon material-symbols-outlined" aria-hidden="true">ac_unit</span><bdi dir="ltr">21. Dezember</bdi></p><h3 class="b0002-zaman-kadran-kbaslik">Wintersonnenwende</h3><p class="b0002-zaman-kadran-kmetin">Die längste Nacht des Jahres; die Steinbock-Zeit beginnt. Im Heft wird die erste Seite des neuen Jahres aufgeschlagen.</p></div></li></ol></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0002-zaman-kadran";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const kadranSec = (s, P) => {
+        const kok = s.querySelector("[data-kadran]");
+        if (!kok) return;
+        const D = [...kok.querySelectorAll("[data-kd]")];
+        const Pn = [...kok.querySelectorAll("." + P + "-panel")];
+        if (D.length < 2 || D.length !== Pn.length) return;
+        s.classList.add(P + "--js");
+        const myil = kok.querySelector("[data-kd-yil]");
+        const mik = kok.querySelector("[data-kd-ikon]");
+        let i = 0;
+        const sec = (n, odak) => {
+          i = (n + D.length) % D.length;
+          Pn.forEach((p, j) => { p.hidden = j !== i; });
+          D.forEach((d, j) => { if (j === i) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current"); });
+          kok.style.setProperty("--s", String(i));
+          if (myil) myil.textContent = Pn[i].dataset.etiket || "";
+          if (mik) { mik.textContent = Pn[i].dataset.ikon || ""; mik.hidden = !Pn[i].dataset.ikon; }
+          if (odak) D[i].focus();
+        };
+        D.forEach((d, j) => {
+          d.addEventListener("click", (e) => { e.preventDefault(); sec(j); });
+          d.addEventListener("keydown", (e) => {
+            const rtl = getComputedStyle(kok).direction === "rtl";
+            const ileri = e.key === "ArrowDown" || e.key === (rtl ? "ArrowLeft" : "ArrowRight");
+            const geri = e.key === "ArrowUp" || e.key === (rtl ? "ArrowRight" : "ArrowLeft");
+            if (!ileri && !geri) return;
+            e.preventDefault();
+            sec(i + (ileri ? 1 : -1), true);
+          });
+        });
+        sec(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      kadranSec(s, P, az);
+    });
+  })();
+</script>
+<section class="b0003-cagri-yildiz-burc" aria-labelledby="b0003-cagri-yildiz-burc-z2qumb-b">
+  <div class="b0003-cagri-yildiz-burc-ic">
+    
+    <div class="b0003-cagri-yildiz-burc-duzen"><div class="b0003-cagri-yildiz-burc-yazi"><p class="b0003-cagri-yildiz-burc-ust">Notiz des Tages</p><h2 class="b0003-cagri-yildiz-burc-baslik" id="b0003-cagri-yildiz-burc-z2qumb-b">Wählen Sie Ihr Sternzeichen am Rad und lesen Sie die Notiz des Tages</h2><p class="b0003-cagri-yildiz-burc-metin">Jede Notiz ist ein kleiner, vergnüglicher Tipp. Die Notizen dienen der Unterhaltung und Deutung; sie sind keine verlässliche Vorhersage.</p><div class="b0003-cagri-yildiz-burc-cta"><a class="b0003-cagri-yildiz-burc-dugme" href="/de/iletisim/" data-bc-bag>Wöchentliche Notiz anfordern<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a><a class="b0003-cagri-yildiz-burc-dugme b0003-cagri-yildiz-burc-dugme--ikincil" href="/de/hakkimizda/">Unsere Regeln</a></div><p class="b0003-cagri-yildiz-burc-not">Die Notizen dienen der Unterhaltung und Interpretation; sie sind keine sicheren Vorhersagen.</p></div><div class="b0003-cagri-yildiz-burc-cark-kap"><div class="b0003-cagri-yildiz-burc-cark" role="group" aria-label="Sternzeichen"><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 0; --n: 12" data-bc="Widder" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♈︎</span><span class="b0003-cagri-yildiz-burc-bad">Widder</span><small class="b0003-cagri-yildiz-burc-byorum">Es tut gut, heute einen Punkt zu einer unfertigen Liste hinzuzufügen.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 1; --n: 12" data-bc="Stier" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♉︎</span><span class="b0003-cagri-yildiz-burc-bad">Stier</span><small class="b0003-cagri-yildiz-burc-byorum">Vielleicht ist heute der Tag, um ein Lieblingsgericht langsam zu kochen.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 2; --n: 12" data-bc="Zwillinge" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♊︎</span><span class="b0003-cagri-yildiz-burc-bad">Zwillinge</span><small class="b0003-cagri-yildiz-burc-byorum">Sie können jemandem, von dem Sie lange nichts geschrieben haben, eine kurze Nachricht schicken.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 3; --n: 12" data-bc="Krebs" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♋︎</span><span class="b0003-cagri-yildiz-burc-bad">Krebs</span><small class="b0003-cagri-yildiz-burc-byorum">Auf ein altes Foto schauen und eine Erinnerung ins Heft schreiben, das könnte schön sein.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 4; --n: 12" data-bc="Löwe" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♌︎</span><span class="b0003-cagri-yildiz-burc-bad">Löwe</span><small class="b0003-cagri-yildiz-burc-byorum">Ein aufrichtiges Kompliment heute könnte euch beide zum Lächeln bringen.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 5; --n: 12" data-bc="Jungfrau" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♍︎</span><span class="b0003-cagri-yildiz-burc-bad">Jungfrau</span><small class="b0003-cagri-yildiz-burc-byorum">Eine Schublade aufzuräumen ist vielleicht die schönste Arbeit des Tages.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 6; --n: 12" data-bc="Waage" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♎︎</span><span class="b0003-cagri-yildiz-burc-bad">Waage</span><small class="b0003-cagri-yildiz-burc-byorum">Wenn Sie zwischen zwei Optionen schwanken, können Sie eine Spaziergangspause einlegen.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 7; --n: 12" data-bc="Skorpion" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♏︎</span><span class="b0003-cagri-yildiz-burc-bad">Skorpion</span><small class="b0003-cagri-yildiz-burc-byorum">Das letzte Kapitel eines Buches, das Sie nicht zu Ende gelesen haben, könnte auf Sie warten.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 8; --n: 12" data-bc="Feder" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♐︎</span><span class="b0003-cagri-yildiz-burc-bad">Feder</span><small class="b0003-cagri-yildiz-burc-byorum">Über eine Straße nach Hause zu gehen, die Sie noch nie genommen haben, kann ein kleines Abenteuer sein.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 9; --n: 12" data-bc="Steinbock" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♑︎</span><span class="b0003-cagri-yildiz-burc-bad">Steinbock</span><small class="b0003-cagri-yildiz-burc-byorum">Sie könnten versuchen, eine Ruhezeit in den Wochenplan einzuplanen.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 10; --n: 12" data-bc="Eimer" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♒︎</span><span class="b0003-cagri-yildiz-burc-bad">Eimer</span><small class="b0003-cagri-yildiz-burc-byorum">Es kann Spaß machen, eine seltsame Idee, die Ihnen einfällt, beiseite zu notieren.</small></button><button type="button" class="b0003-cagri-yildiz-burc-burc" style="--i: 11; --n: 12" data-bc="Fisch" aria-pressed="false"><span class="b0003-cagri-yildiz-burc-bsim" aria-hidden="true">♓︎</span><span class="b0003-cagri-yildiz-burc-bad">Fisch</span><small class="b0003-cagri-yildiz-burc-byorum">Sie können sich fünf Minuten nehmen, um ein Lieblingslied von Anfang bis Ende zu hören.</small></button><div class="b0003-cagri-yildiz-burc-merkez"><span class="b0003-cagri-yildiz-burc-mikon2 material-symbols-outlined" aria-hidden="true">auto_awesome</span><p class="b0003-cagri-yildiz-burc-mad" data-bc-ad aria-live="polite">Wählen Sie Ihr Sternzeichen</p></div></div><p class="b0003-cagri-yildiz-burc-yorum" data-bc-metin aria-live="polite" hidden></p></div></div>
+  </div>
+</section>
+
+
+<script>
+  (() => {
+    const P = "b0003-cagri-yildiz-burc";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const burcCark = (s, P) => {
+        const b = [...s.querySelectorAll("[data-bc]")];
+        if (!b.length) return;
+        s.classList.add(P + "--bcjs");
+        const ad = s.querySelector("[data-bc-ad]");
+        const mt = s.querySelector("[data-bc-metin]");
+        const ilkAd = ad ? ad.textContent : "";
+        const baglar = [...s.querySelectorAll("[data-bc-bag]")];
+        baglar.forEach((a) => { a.dataset.bcTaban = a.getAttribute("href") || ""; });
+        const sec = (x) => {
+          b.forEach((y) => y.setAttribute("aria-pressed", String(y === x)));
+          if (ad) ad.textContent = x ? x.dataset.bc : ilkAd;
+          const y = x ? x.querySelector("small") : null;
+          if (mt) { mt.textContent = y ? y.textContent : ""; mt.hidden = !mt.textContent; }
+          baglar.forEach((a) => {
+            const t = a.dataset.bcTaban;
+            if (!t) return;
+            let u;
+            try { u = new URL(t, location.href); } catch (e) { return; }
+            u.searchParams.set("burc", x.dataset.bc);
+            a.setAttribute("href", u.href.replace(/\?[^#]*/, (q) => q.replace(/\+/g, "%20")));
+          });
+        };
+        b.forEach((x) => x.addEventListener("click", () => sec(x)));
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      burcCark(s, P, az);
+    });
+  })();
+</script>
+<section class="b0004-iletisim-rozet-serit" aria-labelledby="b0004-iletisim-rozet-serit-juf3ww-b">
+  <div class="b0004-iletisim-rozet-serit-ic">
+    
+    <div class="b0004-iletisim-rozet-serit-rz-sahne"><div class="b0004-iletisim-rozet-serit-rz-bas"><p class="b0004-iletisim-rozet-serit-ust">Kontakt</p><h2 class="b0004-iletisim-rozet-serit-baslik" id="b0004-iletisim-rozet-serit-juf3ww-b">Schreiben Sie eine Zeile ins Heft</h2><p class="b0004-iletisim-rozet-serit-metin">Schreiben Sie uns für Wochennotiz, Leserfrage oder Korrektur; wir antworten innerhalb von zwei Werktagen. Auf dieser Demo-Website werden keine Daten gespeichert.</p></div><ul class="b0004-iletisim-rozet-serit-rz-serit" role="list"><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:0"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r0" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r0">Adresse · Adresse · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">location_on</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">Adresse</span><a class="b0004-iletisim-rozet-serit-deger" href="https://www.google.com/maps/search/?api=1&amp;query=Atat%C3%BCrk%20Bulvar%C4%B1%20Nr.%2058%2C%20Odunpazar%C4%B1%2C%20Eski%C5%9Fehir%20(fiktive%20Adresse)" target="_blank" rel="noopener noreferrer">Atatürk Bulvarı Nr. 58, Odunpazarı, Eskişehir (fiktive Adresse)</a><a class="b0004-iletisim-rozet-serit-eylem" href="https://www.google.com/maps/search/?api=1&amp;query=Atat%C3%BCrk%20Bulvar%C4%B1%20Nr.%2058%2C%20Odunpazar%C4%B1%2C%20Eski%C5%9Fehir%20(fiktive%20Adresse)" target="_blank" rel="noopener noreferrer">Route planen<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:1"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r1" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r1">Telefon · Telefon · Telefon · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">call</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">Telefon</span><a class="b0004-iletisim-rozet-serit-deger" href="tel:+902220873333"><bdi dir="ltr">+90 222 087 33 33</bdi></a><a class="b0004-iletisim-rozet-serit-eylem" href="tel:+902220873333">Telefon<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:2"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r2" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r2">WhatsApp · WhatsApp · WhatsApp · WhatsApp · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">chat</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">WhatsApp</span><a class="b0004-iletisim-rozet-serit-deger" href="https://wa.me/902220873333?text=Hallo%20G%C3%B6k%20Defteri%2C%20ich%20habe%20eine%20Frage." target="_blank" rel="noopener noreferrer"><bdi dir="ltr">+902220873333</bdi></a><a class="b0004-iletisim-rozet-serit-eylem" href="https://wa.me/902220873333?text=Hallo%20G%C3%B6k%20Defteri%2C%20ich%20habe%20eine%20Frage." target="_blank" rel="noopener noreferrer">WhatsApp<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:3"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r3" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r3">E-Mail · E-Mail · E-Mail · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">mail</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">E-Mail</span><a class="b0004-iletisim-rozet-serit-deger" href="mailto:not@gokdefteri.example"><bdi dir="ltr">not@gokdefteri.example</bdi></a><a class="b0004-iletisim-rozet-serit-eylem" href="mailto:not@gokdefteri.example">E-Mail<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></span></li><li class="b0004-iletisim-rozet-serit-rz-rozet" style="--i:4"><span class="b0004-iletisim-rozet-serit-rz-disk"><svg class="b0004-iletisim-rozet-serit-rz-halka" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path id="b0004-iletisim-rozet-serit-juf3ww-r4" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" fill="none" /><text class="b0004-iletisim-rozet-serit-rz-yazi"><textPath href="#b0004-iletisim-rozet-serit-juf3ww-r4">Öffnungszeiten · Öffnungszeiten · Öffnungszeiten · </textPath></text></svg><span class="b0004-iletisim-rozet-serit-rz-ik material-symbols-outlined" aria-hidden="true">schedule</span></span><span class="b0004-iletisim-rozet-serit-rz-alt"><span class="b0004-iletisim-rozet-serit-rz-et">Öffnungszeiten</span><span class="b0004-iletisim-rozet-serit-deger">Mo–Fr 11:00 – 19:00 (Nachrichten)</span></span></li></ul></div>
+  </div>
+</section>
+
+
+</div>
+  <div id="footer"><footer class="f0000-alt-pano-pin f0000-alt-pano-pin--bassiz" >
+  <div class="f0000-alt-pano-pin-ic">
+    
+    <div class="f0000-alt-pano-pin-pp-pano"><div class="f0000-alt-pano-pin-pp-not f0000-alt-pano-pin-pp-not--marka"><a class="f0000-alt-pano-pin-logo" href="/de/" aria-label="Startseite - Gök Defteri"><img src="/img/logo.png" alt="Gök Defteri" loading="lazy" decoding="async" /></a><p class="f0000-alt-pano-pin-hakkinda">Kurze Notizen zu den zwölf Sternzeichen, die vier Tore des Jahres und die Notiz des Tages. Fiktive Demo; die Notizen dienen der Unterhaltung und Deutung; sie sind keine sichere Vorhersage.</p><div class="f0000-alt-pano-pin-cta"><a class="f0000-alt-pano-pin-dugme" href="/de/iletisim/">Schreiben Sie uns<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a></div></div><div class="f0000-alt-pano-pin-pp-not"><h2 class="f0000-alt-pano-pin-pp-baslik">Seiten</h2><ul class="f0000-alt-pano-pin-sayfalar"><li><a class="f0000-alt-pano-pin-bag" href="/de/" aria-current="page">Startseite</a></li><li><a class="f0000-alt-pano-pin-bag" href="/de/hakkimizda/">Regeln</a></li><li><a class="f0000-alt-pano-pin-bag" href="/de/iletisim/">Kontakt</a></li></ul></div><div class="f0000-alt-pano-pin-pp-not"><h2 class="f0000-alt-pano-pin-pp-baslik">Kurzbefehle</h2><ul class="f0000-alt-pano-pin-baglantilar"><li><a class="f0000-alt-pano-pin-bag" href="/de/hakkimizda/">Die Regeln des Hefts</a></li><li><a class="f0000-alt-pano-pin-bag" href="/de/iletisim/">Schreiben Sie uns</a></li></ul></div><div class="f0000-alt-pano-pin-pp-not f0000-alt-pano-pin-pp-not--il"><h2 class="f0000-alt-pano-pin-pp-baslik">Kontakt</h2><ul class="f0000-alt-pano-pin-iletisim"><li class="f0000-alt-pano-pin-il f0000-alt-pano-pin-il--adres"><span class="f0000-alt-pano-pin-il-ikon material-symbols-outlined" aria-hidden="true">location_on</span><span class="f0000-alt-pano-pin-il-ic"><span class="f0000-alt-pano-pin-il-etiket">Adresse</span><span>Atatürk Bulvarı Nr. 58, Odunpazarı, Eskişehir (fiktive Adresse)</span></span></li><li class="f0000-alt-pano-pin-il f0000-alt-pano-pin-il--tel"><span class="f0000-alt-pano-pin-il-ikon material-symbols-outlined" aria-hidden="true">call</span><span class="f0000-alt-pano-pin-il-ic"><span class="f0000-alt-pano-pin-il-etiket">Telefon</span><a class="f0000-alt-pano-pin-bag" href="tel:+902220873333"><bdi dir="ltr">+90 222 087 33 33</bdi></a></span></li><li class="f0000-alt-pano-pin-il f0000-alt-pano-pin-il--posta"><span class="f0000-alt-pano-pin-il-ikon material-symbols-outlined" aria-hidden="true">mail</span><span class="f0000-alt-pano-pin-il-ic"><span class="f0000-alt-pano-pin-il-etiket">E-Mail</span><a class="f0000-alt-pano-pin-bag" href="mailto:not@gokdefteri.example"><bdi dir="ltr">not@gokdefteri.example</bdi></a></span></li></ul></div><div class="f0000-alt-pano-pin-pp-not"><h2 class="f0000-alt-pano-pin-pp-baslik">Öffnungszeiten</h2><dl class="f0000-alt-pano-pin-saatler"><div class="f0000-alt-pano-pin-saat"><dt>Montag–Freitag</dt><dd><bdi dir="ltr">11:00 – 19:00</bdi></dd></div></dl></div></div><div class="f0000-alt-pano-pin-pp-dip"><p class="f0000-alt-pano-pin-telif"><span>&copy; 2026 Gök Defteri</span><span>Alle Rechte vorbehalten</span></p><ul class="f0000-alt-pano-pin-pp-yasal"><li><a class="f0000-alt-pano-pin-bag" href="/de/kisiselveriler/">Datenschutz (KVKK)</a></li><li><a class="f0000-alt-pano-pin-bag" href="/de/gizlilikpolitikasi/">Datenschutz</a></li><li><a class="f0000-alt-pano-pin-bag" href="/de/yasaluyari/">Rechtlicher Hinweis</a></li></ul><div class="f0000-alt-pano-pin-dil"><nav class="wm-langbar wm-langbar--dd" aria-label="Sprachauswahl" data-wm-lang="dd" data-wm-lang-n="5"><button type="button" class="wm-lang-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Sprachauswahl: Deutsch"><span class="wm-lang-code">DE</span><svg class="wm-lang-chev" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><ul class="wm-lang-menu"><li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr" dir="ltr"><span class="wm-lang-code">TR</span><span class="wm-lang-name">Türkçe</span></a></li><li class="wm-lang-item"><a href="/en/" hreflang="en" lang="en" dir="ltr"><span class="wm-lang-code">EN</span><span class="wm-lang-name">English</span></a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar" dir="rtl"><span class="wm-lang-code">AR</span><span class="wm-lang-name">العربية</span></a></li><li class="wm-lang-item wm-lang-active"><a href="/de/" hreflang="de" lang="de" dir="ltr" aria-current="true"><span class="wm-lang-code">DE</span><span class="wm-lang-name">Deutsch</span></a></li><li class="wm-lang-item"><a href="/ru/" hreflang="ru" lang="ru" dir="ltr"><span class="wm-lang-code">RU</span><span class="wm-lang-name">Русский</span></a></li></ul></nav></div><a class="f0000-alt-pano-pin-yukari" href="#" aria-label="Nach oben"><span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span></a></div>
+  </div>
+</footer>
+
+
+<div class="f0001-dk" role="contentinfo" aria-label="Demo-Hinweis">
+  <p class="f0001-dk-text">Diese Demo wurde von <bdi class="f0001-dk-brand" dir="ltr">Webyapar</bdi> erstellt — <a class="f0001-dk-cta" href="https://webyapar.com/temalar#burc-3" target="_blank" rel="noopener noreferrer"><span>Dieses Thema anfordern</span><span class="mx-visually-hidden"> (öffnet in einem neuen Tab)</span><span class="material-symbols-outlined mx-flip f0001-dk-arrow" aria-hidden="true">arrow_forward</span></a></p>
+</div>
+
+<nav class="wm-yasal" aria-label="Company &amp; Legal" style="box-sizing:border-box;width:100%;max-width:100%;padding:12px 16px;background:var(--mx-site-bg, #FAF3E8);color:var(--mx-site-text, #111111);display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;justify-content:center;text-align:center;overflow-wrap:anywhere"><strong style="color:var(--mx-site-text, #111111)">Company &amp; Legal</strong><a href="/de/misyon/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Mission</a><a href="/de/vizyon/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Vision</a><a href="/de/kalitepolitikamiz/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Qualitätspolitik</a><a href="/de/kullanicahaklari/" style="color:var(--mx-site-text, #111111);padding:6px 0;text-decoration:underline;min-width:0">Nutzerrechte</a></nav></div>
+
+  
+
+  <script defer src="/src/swiper-bundle.min.js"></script>
+  <script defer src="/src/mx-ui.js?v=7c1713d5"></script>
+  <script defer src="/src/mx-store.js?v=76e4af87"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=b2eba89f"></script>
+  <script defer src="/src/cookie.js?v=120cf97b"></script>
+
+</body>
+
+</html>

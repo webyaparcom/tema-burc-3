@@ -2,7 +2,9 @@
   "name": {
     "tr": "Kurallar",
     "en": "Rules",
-    "ar": "القواعد"
+    "ar": "القواعد",
+    "de": "Regeln",
+    "ru": "Правила"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Defterin altı kuralı ve yılın dört kapısı.",
     "en": "The notebook’s six rules and the four gates of the year.",
-    "ar": "قواعد الدفتر الست وأبواب السنة الأربعة."
+    "ar": "قواعد الدفتر الست وأبواب السنة الأربعة.",
+    "de": "Die sechs Regeln des Notizbuchs und die vier Tore des Jahres.",
+    "ru": "Шесть правил блокнота и четыре врат года."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Kurallar",
     "en": "Rules",
-    "ar": "القواعد"
+    "ar": "القواعد",
+    "de": "Regeln",
+    "ru": "Правила"
   },
   "keyword": {
     "tr": "burç yorumu kuralları, ekinoks",
     "en": "zodiac note rules, equinox",
-    "ar": "قواعد ملاحظات الأبراج، الاعتدال"
+    "ar": "قواعد ملاحظات الأبراج، الاعتدال",
+    "de": "Regeln der Horoskopdeutung, Tagundnachtgleiche",
+    "ru": "правила толкования гороскопов, равноденствие"
   },
   "text": {},
   "update": "2026-11-16T22:43:17.395Z",

@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Gökyüzüne bakmayı herkes için küçük, keyifli bir günlük alışkanlığa dönüştürmek (kurgusal hedef).</p>",
     "en": "<h2>Our vision</h2>\n<p>To turn looking at the sky into a small, pleasant daily habit for everyone (fictional goal).</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نجعل النظر إلى السماء عادة يومية صغيرة وممتعة للجميع (هدف افتراضي).</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نجعل النظر إلى السماء عادة يومية صغيرة وممتعة للجميع (هدف افتراضي).</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Das Betrachten des Himmels für alle zu einer kleinen, angenehmen täglichen Gewohnheit zu machen (fiktives Ziel).</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Превратить наблюдение за небом в маленькую приятную ежедневную привычку для всех (вымышленная цель).</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T22:43:17.077Z",
   "update": "2026-11-16T22:43:17.426Z",
